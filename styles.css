@@ -1,0 +1,538 @@
+*{
+    margin: 0;
+    padding: 0;
+  font-family: "Cabin", sans-serif;
+    }
+.header{
+    min-height: 100vh;
+    max-width: 1920px;
+    width:100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://scontent-nrt1-2.xx.fbcdn.net/v/t1.6435-9/194734768_1343207066061945_6442647375437568135_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=PIUSPpUSDJ4Q7kNvgEyzm-v&_nc_zt=23&_nc_ht=scontent-nrt1-2.xx&_nc_gid=AdjViBp1BWHCwvY3d3nBwrp&oh=00_AYBXtqaJVquLwnyHVEqS8Z_RvkKO91d9LL-H9_KVmcB0kQ&oe=679FC5A3);
+    background-position: center;
+    background-position-y: 1px;
+    background-size:contain;
+    position: relative;
+    
+}
+nav{
+    display: flex;
+    padding: 3% 3%;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+nav img{
+    width: 27%;
+    }
+.nav-links{
+    flex:1;
+    text-align: right;
+    }
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 13px 12px;
+    position: relative;
+    }
+.nav-links ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 24px;
+    }
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+        height: 15px;
+    background: red;
+    display: block;
+    margin: auto;
+    transition: 0.7s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 87%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{font-size: 57px;
+}
+.text-box p{
+    margin: 24px 0 40px;
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+    word-spacing: 4px;
+    line-height: 38px;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 14px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid rgb(81, 41, 101);
+    background: rgba(97, 35, 105, 0.69);
+    transition: 1s;
+}
+
+nav .material-symbols-outlined{
+    display: none;
+}
+
+@media(max-width:700px){
+    .header{
+        background-position: center;
+        background-size:auto;
+    }
+    .text-box h1{
+        font-size: 32px;
+    }
+    .text-box p{
+        font-size: 14px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links {
+    position: fixed; 
+    background: #512965;
+    height: 100vh; 
+    width: 200px;
+    top: 0;
+    right: -200px; 
+    text-align: left;
+    z-index: 1000; 
+    transition: 1s; 
+    overflow-y: auto; 
+}
+    nav .material-symbols-outlined {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 33px;
+        cursor:pointer;
+        
+    }
+    .nav-links ul{
+        padding: 9px;
+    }
+}
+
+/* Blog Section */
+.blog {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 51px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p {
+    color: #7b7b7b;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 25px;
+    
+    padding: 8px;
+    
+}
+/*Carousel Style Web*/
+.carousel-wrapper {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    perspective: 1200px;
+    overflow: hidden;
+}
+
+.carousel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.carousel-item {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) translateZ(1px);
+    backface-visibility: hidden;
+    transition: transform 1s, opacity 1s;
+    border: 1px solid #fff;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 7px;
+}
+
+.carousel-item img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+.carousel-nav {
+    position: absolute;
+    padding-top: 10px;
+    bottom: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+}
+
+.nav-btn {
+    padding: 10px 20px;
+    background: rgba(9, 4, 11, 0.69);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.nav-btn:hover {
+    background: #00107880;
+}
+
+@media(max-width: 700px) {
+    /* Your mobile styles here */
+}
+
+/* Carousel Styles Mobile */
+@media(max-width: 700px){
+    .carousel-wrapper {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    perspective: 1000px;
+    overflow: hidden;
+}
+
+.carousel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.carousel-item {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) translateZ(400px);
+    backface-visibility: hidden;
+    transition: transform 0.5s;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.carousel-nav {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+}
+
+.nav-btn {
+    padding: 10px 20px;
+    background: rgba(9, 4, 11, 0.69);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.nav-btn:hover {
+    background: #00107880;
+}
+
+@media (max-width: 700px) {
+    .carousel-wrapper {
+        height: 500px;
+    }
+
+    .carousel-item {
+        width: 150px;
+        height: 150px;
+    }
+}
+}
+
+/*---------footer----------*/
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top:20px;
+    font-weight: 600;
+}
+.icons .fa{
+    color:#434343;
+    margin: 0 21px;
+    cursor: pointer;
+    padding: 18px 0;
+    font-size: 23px;
+}
+
+.sub-header{
+    height:57vh;
+    width: 100vw;
+    background-image:url(images/bannertrans.png);
+    background-position: center;
+    background-size: 1200px;
+    background-position-y: bottom;
+    background-position-x: right;
+    background-blend-mode:normal;
+    background-color: rgba(109,109, 137, 0.98);
+    background-repeat: no-repeat;
+    text-align:left;
+    color: rgb(0, 0, 0);
+
+}
+.sub-header h1{
+    margin-top: 100px;
+    padding-left: 130px;
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    font-size: 79px;
+    
+}
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.about-col{
+    
+    flex-basis: 48%;
+    padding: 30px 22px;
+}
+.about-col img{
+    width: 103%;
+}
+.about-col h1{
+    padding-top: 0;
+}
+.about-col p{
+    padding-top: 15px 0 25px;
+}
+.red-btn{
+    border: 1px solid rgb(81, 41, 101);
+    background: transparent;
+    color:rgb(81, 41, 101);
+}
+.red-btn:hover{
+    color:#fff;
+}
+
+@media(max-width:700px){
+    
+    .sub-header{
+    height:57vh;
+    width: 100vw;
+    background-image:url(images/bannertrans.png);
+    background-position: center;
+    background-size: 806px;
+    background-position-y: bottom;
+    background-position-x: right;
+    background-blend-mode:normal;
+    background-color: rgba(109,109, 137, 0.98);
+    background-repeat: no-repeat;
+    text-align:left;
+    color: rgb(0, 0, 0);
+
+}
+    
+    .sub-header h1{
+    margin-top: 49px;
+    padding-left: 26px;
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    font-size: 69px;
+    
+}
+
+}
+
+@media(max-width:375px){
+    
+    .sub-header{
+    height:57vh;
+    width: 100vw;
+    background-image:url(images/bannertrans.png);
+    background-position: center;
+    background-size: 469px;
+    background-position-y: bottom;
+    background-position-x: right;
+    background-blend-mode:normal;
+    background-color: rgba(109,109, 137, 0.98);
+    background-repeat: no-repeat;
+    text-align:left;
+    color: rgb(0, 0, 0);
+
+}
+    
+    .sub-header h1{
+    margin-top: 49px;
+    padding-left: 26px;
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    font-size: 69px;
+    
+}
+
+}
+
+
+/* Contact Section */
+.contact {
+    padding: 40px;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.contact h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-container {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-container label {
+    font-size: 14px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-container input,
+.input-container textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.input-container input:focus,
+.input-container textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Thank-You Message */
+.thank-you-message {
+    display: none; /* Hidden by default */
+    text-align: center;
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.thank-you-message h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.thank-you-message p {
+    font-size: 18px;
+    color: #555;
+}
+
+.thank-you-message .btn {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007BFF;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.thank-you-message .btn:hover {
+    background-color: #0056b3;
+}
+
+
+.reflection-content{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.reflection-content ul li{
+    text-align: left;
+}

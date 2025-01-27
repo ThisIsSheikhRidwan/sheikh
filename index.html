@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ridwan's Portfolio</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Material+Symbols+Outlined&display=swap" rel="stylesheet" />
+        
+    </head>
+    <body>
+        <!-- Header Section -->
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="images/whiteridwan.svg" alt="Logo"></a>
+                <div class="nav-links" id="navLinks">
+                    <span class="material-symbols-outlined" onclick="hideMenu()">close</span>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="blogs.html">Showcase</a></li>
+                        <li><a href="contact me.html">Contact Me</a></li>
+                        <li><a href="reflection.html">Details</a></li>
+                    </ul>
+                </div>
+                <span class="material-symbols-outlined" onclick="showMenu()">menu</span>
+            </nav>
+            <div class="text-box">
+                <h1>Welcome To My Portfolio</h1>
+                <p>This Is My Showcase Of My Designs<br>I hope my designs will make you love it</p>
+                <a href="blogs.html" class="hero-btn">Check Out My Showcase!</a>
+            </div>     
+        </section>
+
+        <!-- JavaScript for Toggle Menu -->
+        <script>
+            const navLinks = document.getElementById("navLinks");
+
+            function showMenu() {
+                navLinks.style.right = "0"; // Slide menu into view
+            }
+
+            function hideMenu() {
+                navLinks.style.right = "-200px"; // Slide menu out of view
+            }
+
+            // Hide menu for larger screens
+            window.addEventListener('resize', () => {
+                if (window.innerWidth > 1200) {
+                    navLinks.style.right = "0"; // Keep menu hidden
+                    navLinks.style.display = "none"; // Hide nav for desktops
+                } else {
+                    navLinks.style.display = "block"; // Show nav for smaller screens
+                }
+            });
+        </script>
+    </body>
+</html>
