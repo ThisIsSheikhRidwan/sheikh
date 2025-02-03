@@ -345,7 +345,7 @@ p {
     padding: 30px 22px;
 }
 .about-col img{
-    width: 40%%;
+    width: 40%;
 }
 .about-col h1{
     padding-top: 0;
@@ -387,6 +387,10 @@ p {
     font-weight: 400;
     font-size: 69px;
     
+}
+
+.about-col img{
+    width: 30%;
 }
 
 }
