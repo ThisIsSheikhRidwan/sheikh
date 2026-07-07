@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Sheikh Ridwan</title>
+  <meta name="description" content="Get in touch with Sheikh Ridwan — Full-Stack Developer, Graphic Designer, and Logo Specialist based in Japan.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Material+Symbols+Outlined&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <canvas id="matrix-canvas"></canvas>
+
+  <nav>
+    <a href="index.html" class="logo"><img src="whiteridwan.svg" alt="Sheikh Ridwan"></a>
+    <div class="nav-links" id="navLinks">
+      <span class="material-symbols-outlined close-btn" onclick="hideMenu()">close</span>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="showcase.html">Showcase</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="reflection.html">System Log</a></li>
+      </ul>
+    </div>
+    <span class="material-symbols-outlined" onclick="showMenu()">menu</span>
+  </nav>
+
+  <section class="sub-header">
+    <div class="terminal-line"><span class="prompt">></span> ./establish_connection.sh</div>
+    <h1>> SEND_TRANSMISSION</h1>
+    <div class="breadcrumb">~ /contact</div>
+  </section>
+
+  <section class="page-content">
+    <div class="terminal-block" style="margin-bottom:30px;max-width:600px;margin-left:auto;margin-right:auto;">
+      <span class="comment">// Ready to receive your message. Expect a response within 24 hours.</span>
+    </div>
+
+    <div class="contact-form-wrap">
+      <div id="contactFormWrapper">
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="name">NAME</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">EMAIL</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">MESSAGE</label>
+            <textarea id="message" name="message" placeholder="Type your message..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;">[ SEND_TRANSMISSION ]</button>
+        </form>
+      </div>
+
+      <div class="thank-you-message" id="thankYouMessage">
+        <div class="terminal-icon">> TRANSMISSION_SENT</div>
+        <h2>Message Received</h2>
+        <p>Sheikh Ridwan will respond within 24 hours.<br>Thank you for reaching out.</p>
+        <a href="index.html" class="btn" style="margin-top:20px;">[ RETURN_HOME ]</a>
+      </div>
+
+      <div class="social-links">
+        <a href="https://www.facebook.com/sheikh.ridwan.islam" target="_blank"><i class="fa fa-facebook-official"></i> Facebook</a>
+        <a href="https://www.instagram.com/iamsheikhridwan/" target="_blank"><i class="fa fa-instagram"></i> Instagram</a>
+        <a href="https://snapchat.com/t/ridwan671" target="_blank"><i class="fa fa-snapchat"></i> Snapchat</a>
+        <a href="https://www.linkedin.com/in/sheikhridwan/" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p class="footer-line"><span class="amber">></span> SHEIKH RIDWAN // DESIGN SYSTEM v2026</p>
+    <p class="footer-line">© 2026 Sheikh Ridwan — All Systems Operational</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    const navLinks = document.getElementById("navLinks");
+    function showMenu() { navLinks.classList.add('open'); }
+    function hideMenu() { navLinks.classList.remove('open'); }
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768) navLinks.classList.remove('open');
+    });
+
+    const form = document.getElementById('contactForm');
+    const formWrapper = document.getElementById('contactFormWrapper');
+    const thankYou = document.getElementById('thankYouMessage');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      formWrapper.style.display = 'none';
+      thankYou.style.display = 'block';
+    });
+  </script>
+</body>
+</html>

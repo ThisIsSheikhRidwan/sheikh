@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills — Sheikh Ridwan</title>
+  <meta name="description" content="38 verified skills across development, design, trading, business, IT, and languages. Node.js, API Engineering, Graphic Design, Branding, and more.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Material+Symbols+Outlined&display=swap" rel="stylesheet">
+</head>
+<body>
+  <canvas id="matrix-canvas"></canvas>
+
+  <nav>
+    <a href="index.html" class="logo"><img src="whiteridwan.svg" alt="Sheikh Ridwan"></a>
+    <div class="nav-links" id="navLinks">
+      <span class="material-symbols-outlined close-btn" onclick="hideMenu()">close</span>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="skills.html" class="active">Skills</a></li>
+        <li><a href="showcase.html">Showcase</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="reflection.html">System Log</a></li>
+      </ul>
+    </div>
+    <span class="material-symbols-outlined" onclick="showMenu()">menu</span>
+  </nav>
+
+  <section class="sub-header">
+    <div class="terminal-line"><span class="prompt">></span> neofetch --skills</div>
+    <h1>> SKILLS.EXE</h1>
+    <div class="breadcrumb">~ /skills</div>
+  </section>
+
+  <section class="page-content">
+    <div class="terminal-block" style="margin-bottom:30px;">
+      <span class="comment">// 38 verified skills. 5 categories. 1 toolkit.</span>
+    </div>
+
+    <div class="skills-nav">
+      <button class="active" data-cat="development">Development</button>
+      <button data-cat="design">Design</button>
+      <button data-cat="trading">Trading & Crypto</button>
+      <button data-cat="business">Business & Leadership</button>
+      <button data-cat="it">IT & Systems</button>
+      <button data-cat="languages">Languages</button>
+    </div>
+
+    <!-- DEVELOPMENT -->
+    <div class="skills-category active" id="cat-development">
+      <h3>$ skills --category=development</h3>
+      <div class="skills-grid">
+        <div class="skill-tag">Node.js <span class="skill-source">Full-Stack Dev</span></div>
+        <div class="skill-tag">API Engineering <span class="skill-source">Top Skill</span></div>
+        <div class="skill-tag">Software Development <span class="skill-source">Top Skill</span></div>
+        <div class="skill-tag">Web Development <span class="skill-source">Top Skill</span></div>
+        <div class="skill-tag">Web Design <span class="skill-source">Frontend</span></div>
+        <div class="skill-tag">IT Strategy <span class="skill-source">Education</span></div>
+      </div>
+    </div>
+
+    <!-- DESIGN -->
+    <div class="skills-category" id="cat-design">
+      <h3>$ skills --category=design</h3>
+      <div class="skills-grid">
+        <div class="skill-tag">Graphic Design <span class="skill-source">Top Skill</span></div>
+        <div class="skill-tag">Branding & Identity <span class="skill-source">Prayas Group</span></div>
+        <div class="skill-tag">Product Design <span class="skill-source">Prayas Group</span></div>
+        <div class="skill-tag">Product Branding <span class="skill-source">Prayas Group</span></div>
+        <div class="skill-tag">Poster Design <span class="skill-source">Prayas Group</span></div>
+      </div>
+    </div>
+
+    <!-- TRADING & CRYPTO -->
+    <div class="skills-category" id="cat-trading">
+      <h3>$ skills --category=trading</h3>
+      <div class="skills-grid">
+        <div class="skill-tag">Cryptocurrency Trading <span class="skill-source">Binance</span></div>
+        <div class="skill-tag">Risk Management <span class="skill-source">Binance</span></div>
+        <div class="skill-tag">Market Analysis <span class="skill-source">Binance</span></div>
+        <div class="skill-tag">Client Relations <span class="skill-source">Binance</span></div>
+      </div>
+      <div class="skills-note">
+        <strong>516</strong> verified Binance transactions · <strong>277</strong> settled · Largest execution: <strong>¥903,000</strong>
+      </div>
+    </div>
+
+    <!-- BUSINESS & LEADERSHIP -->
+    <div class="skills-category" id="cat-business">
+      <h3>$ skills --category=business</h3>
+      <div class="skills-grid">
+        <div class="skill-tag">Project Management <span class="skill-source">ISA</span></div>
+        <div class="skill-tag">Leadership <span class="skill-source">ISA</span></div>
+        <div class="skill-tag">Team Leadership <span class="skill-source">ISA</span></div>
+        <div class="skill-tag">Event Organizing <span class="skill-source">ISA</span></div>
+        <div class="skill-tag">Sales <span class="skill-source">Teqtive</span></div>
+        <div class="skill-tag">Customer Support <span class="skill-source">Teqtive</span></div>
+        <div class="skill-tag">Customer Relationship Management <span class="skill-source">Teqtive</span></div>
+        <div class="skill-tag">Lead Generation <span class="skill-source">Teqtive</span></div>
+      </div>
+    </div>
+
+    <!-- IT & SYSTEMS -->
+    <div class="skills-category" id="cat-it">
+      <h3>$ skills --category=it</h3>
+      <div class="skills-grid">
+        <div class="skill-tag">Computer Diagnostics <span class="skill-source">Best Tech Center</span></div>
+        <div class="skill-tag">Hardware Diagnostics <span class="skill-source">Best Tech Center</span></div>
+        <div class="skill-tag">Career Path Planning <span class="skill-source">LinkedIn Certified</span></div>
+      </div>
+    </div>
+
+    <!-- LANGUAGES -->
+    <div class="skills-category" id="cat-languages">
+      <h3>$ skills --category=languages</h3>
+      <div class="skills-grid">
+        <div class="skill-tag">Bengali <span class="skill-source">Native</span></div>
+        <div class="skill-tag">English <span class="skill-source">Duolingo Certified</span></div>
+        <div class="skill-tag">Japanese <span class="skill-source">Asahi University</span></div>
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    <p class="footer-line"><span class="amber">></span> SHEIKH RIDWAN // DESIGN SYSTEM v2026</p>
+    <p class="footer-line">© 2026 Sheikh Ridwan — All Systems Operational</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    const navLinks = document.getElementById("navLinks");
+    function showMenu() { navLinks.classList.add('open'); }
+    function hideMenu() { navLinks.classList.remove('open'); }
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768) navLinks.classList.remove('open');
+    });
+
+    document.querySelectorAll('.skills-nav button').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.skills-nav button').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.skills-category').forEach(c => c.classList.remove('active'));
+        btn.classList.add('active');
+        document.getElementById('cat-' + btn.dataset.cat).classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>

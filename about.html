@@ -1,89 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>About My Designs</title>
-        <link rel="stylesheet" href="styles.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Material+Symbols+Outlined&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
-    <body>
-        <!-- Header Section -->
-        <section class="sub-header">
-            <nav>
-                <a href="index.html"><img src="whiteridwan.svg" alt="Logo"></a>
-                <div class="nav-links" id="navLinks">
-                    <span class="material-symbols-outlined" onclick="hideMenu()">close</span>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="blogs.html">Showcase</a></li>
-                        <li><a href="contact me.html">Contact Me</a></li>
-                        <li><a href="reflection.html">Details</a></li>
-                    </ul>
-                </div>
-                <span class="material-symbols-outlined" onclick="showMenu()">menu</span>
-            </nav>
-             <h1>About Myself</h1>
-        </section>
-        
-        <!------about myself content------>
-        <section class="about-us">
-        <div class=row>
-            <div class="about-col">
-            <h1>Introduction</h1>
-                <p>
-                My Name Is Sheikh Ridwan. <br>Came From Bangladesh, A South Asian Country.<br>
-                    I have a passion for technological things from my childhood, Which have fascinated
-                    me always. After My 12th I came to japan and started laerning japanese language and after that I have got enrolled myself in a vocational college in japan.
-                </p>
-                <a href="contact%20me.html" class="hero-btn red-btn">Contact Me</a>
-            </div>
-            <div class="about-col">
-                <img src="rid1.gif">
-            </div>
-            </div>
-        </section>
-        
-        <section class="footer">
-        <h4>About Myself</h4>
-            <p> Sheikh Ridwan Islam<br>イスラームエスケーリドウアン</p>
-            <div class="icons">
-                <a href="https://www.facebook.com/sheikh.ridwan.islam">
-                <i class="fa fa-facebook-official"></i></a>
-                <a href="https://www.instagram.com/iamsheikhridwan/">
-                    <i class="fa fa-instagram" ></i></a>
-                <a href="https://snapchat.com/t/ridwan671">
-                    <i class="fa fa-snapchat" ></i></a>
-            </div>
-            <p>Social Contacts<br>Contact Me Here</p>
-        </section>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Sheikh Ridwan</title>
+  <meta name="description" content="Learn about Sheikh Ridwan — Full-Stack Developer, Graphic Designer, and Logo Specialist. From Bangladesh to Japan, building systems and crafting identities.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Material+Symbols+Outlined&display=swap" rel="stylesheet">
+</head>
+<body>
+  <canvas id="matrix-canvas"></canvas>
 
+  <nav>
+    <a href="index.html" class="logo"><img src="whiteridwan.svg" alt="Sheikh Ridwan"></a>
+    <div class="nav-links" id="navLinks">
+      <span class="material-symbols-outlined close-btn" onclick="hideMenu()">close</span>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="showcase.html">Showcase</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="reflection.html">System Log</a></li>
+      </ul>
+    </div>
+    <span class="material-symbols-outlined" onclick="showMenu()">menu</span>
+  </nav>
 
-        <!-- JavaScript for Toggle Menu -->
-        <script>
-            const navLinks = document.getElementById("navLinks");
+  <section class="sub-header">
+    <div class="terminal-line"><span class="prompt">></span> whoami</div>
+    <h1>> ABOUT.EXE</h1>
+    <div class="breadcrumb">~ /about</div>
+  </section>
 
-            function showMenu() {
-                navLinks.style.right = "0"; // Slide menu into view
-            }
+  <section class="page-content">
+    <div class="about-grid">
+      <div class="about-image">
+        <img src="rid1.gif" alt="Sheikh Ridwan">
+        <div class="caption">> profile.img — Sheikh Ridwan</div>
+      </div>
+      <div>
+        <div class="terminal-block">
+          <div><span class="prompt">></span> whoami</div>
+          <div>Sheikh Ridwan — a builder who codes, designs, and fixes things.</div>
+          <br>
+          <div><span class="prompt">></span> pwd</div>
+          <div>/Japan/Maebashi</div>
+          <br>
+          <div><span class="prompt">></span> cat origin.txt</div>
+          <div>Born in Bangladesh. Moved to Japan in 2022.</div>
+          <div>Currently studying IT at 日本おもてなし専門学校.</div>
+          <div>Fluent in Bengali, English, and Japanese.</div>
+        </div>
 
-            function hideMenu() {
-                navLinks.style.right = "-200px"; // Slide menu out of view
-            }
+        <div class="terminal-block">
+          <div><span class="comment">// "The best solutions live at the intersection of logic and creativity."</span></div>
+          <br>
+          <div>My journey started in Bangladesh, where I co-founded <span class="highlight">Best Tech Center</span> at 21 — diagnosing hardware, designing customer workflows, and growing it to <span class="highlight">50,00,000 BDT</span> in annual revenue. That experience taught me something no classroom ever could: technology only matters when it solves real human problems.</div>
+          <br>
+          <div>Then I moved to Japan. New language. New culture. New industry. I enrolled at <span class="highlight">Asahi University</span> to learn Japanese, then joined <span class="highlight">日本おもてなし専門学校</span> for IT — immersing myself in a country where precision and craftsmanship are a way of life.</div>
+          <br>
+          <div>Along the way, I traded <span class="highlight">USDT on Binance</span> — executing 516 transactions, managing liquidity under pressure, and learning risk management in a market that never sleeps.</div>
+          <br>
+          <div>I also founded the <span class="highlight">International Society of Artists (ISA)</span> — because I believe creativity should be funded, not filtered. We secured scholarships for young artists globally.</div>
+          <br>
+          <div>Today, I bridge three worlds: <span class="highlight">development</span> (Node.js, APIs, automation), <span class="highlight">design</span> (branding, logos, posters), and <span class="highlight">IT support</span> (hardware, networking, troubleshooting).</div>
+        </div>
+      </div>
+    </div>
 
-            // Hide menu for larger screens
-            window.addEventListener('resize', () => {
-                if (window.innerWidth > 1200) {
-                    navLinks.style.right = "0"; // Keep menu hidden
-                    navLinks.style.display = "none"; // Hide nav for desktops
-                } else {
-                    navLinks.style.display = "block"; // Show nav for smaller screens
-                }
-            });
-        </script>
-    </body>
+    <h2 style="font-family:var(--font-mono);color:var(--amber);margin:40px 0 20px;font-size:18px;">> ./strengths.sh</h2>
+
+    <div class="strengths-grid">
+      <div class="strength-item">
+        <span class="status">[OK]</span> Practical problem solving — theory is useful, execution wins
+      </div>
+      <div class="strength-item">
+        <span class="status">[OK]</span> Full-stack operation — code, systems, customers, I handle all layers
+      </div>
+      <div class="strength-item">
+        <span class="status">[OK]</span> Entrepreneurial ownership — every line of code has business impact
+      </div>
+      <div class="strength-item">
+        <span class="status">[OK]</span> AI-augmented development — faster without dependency
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p class="footer-line"><span class="amber">></span> SHEIKH RIDWAN // DESIGN SYSTEM v2026</p>
+    <p class="footer-line">© 2026 Sheikh Ridwan — All Systems Operational</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    const navLinks = document.getElementById("navLinks");
+    function showMenu() { navLinks.classList.add('open'); }
+    function hideMenu() { navLinks.classList.remove('open'); }
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768) navLinks.classList.remove('open');
+    });
+  </script>
+</body>
 </html>

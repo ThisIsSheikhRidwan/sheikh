@@ -1,59 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ridwan's Portfolio</title>
-        <link rel="stylesheet" href="styles.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Material+Symbols+Outlined&display=swap" rel="stylesheet" />
-        
-    </head>
-    <body>
-        <!-- Header Section -->
-        <section class="header">
-            <nav>
-                <a href="index.html"><img src="whiteridwan.svg" alt="Logo"></a>
-                <div class="nav-links" id="navLinks">
-                    <span class="material-symbols-outlined" onclick="hideMenu()">close</span>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="blogs.html">Showcase</a></li>
-                        <li><a href="contact me.html">Contact Me</a></li>
-                        <li><a href="reflection.html">Details</a></li>
-                    </ul>
-                </div>
-                <span class="material-symbols-outlined" onclick="showMenu()">menu</span>
-            </nav>
-            <div class="text-box">
-                <h1>Welcome To My Portfolio</h1>
-                <p>This Is My Showcase Of My Designs<br>I hope my designs will make you love it</p>
-                <a href="blogs.html" class="hero-btn">Check Out My Showcase!</a>
-            </div>     
-        </section>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sheikh Ridwan — Full-Stack Developer & Graphic Designer</title>
+  <meta name="description" content="Full-Stack Web & App Developer, Graphic Designer, and Logo Specialist based in Japan. Node.js, API Automation, Brand Identity, IT Support.">
+  <meta property="og:title" content="Sheikh Ridwan — Full-Stack Developer & Designer">
+  <meta property="og:description" content="I build systems. I craft identities. I solve problems.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Material+Symbols+Outlined&display=swap" rel="stylesheet">
+</head>
+<body>
+  <canvas id="matrix-canvas"></canvas>
 
-        <!-- JavaScript for Toggle Menu -->
-        <script>
-            const navLinks = document.getElementById("navLinks");
+  <nav>
+    <a href="index.html" class="logo"><img src="whiteridwan.svg" alt="Sheikh Ridwan"></a>
+    <div class="nav-links" id="navLinks">
+      <span class="material-symbols-outlined close-btn" onclick="hideMenu()">close</span>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="showcase.html">Showcase</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="reflection.html">System Log</a></li>
+      </ul>
+    </div>
+    <span class="material-symbols-outlined" onclick="showMenu()">menu</span>
+  </nav>
 
-            function showMenu() {
-                navLinks.style.right = "0"; // Slide menu into view
-            }
+  <section class="hero">
+    <div class="hero-content">
+      <div class="badge">> SYSTEM_ACTIVE // PORTFOLIO v2026</div>
 
-            function hideMenu() {
-                navLinks.style.right = "-200px"; // Slide menu out of view
-            }
+      <div class="otw-banner">
+        <span class="dot"></span>
+        <span><strong>OPEN TO WORK</strong> — Software Engineer · Web Developer · IT Support · Hotel Specialist</span>
+      </div>
 
-            // Hide menu for larger screens
-            window.addEventListener('resize', () => {
-                if (window.innerWidth > 1200) {
-                    navLinks.style.right = "0"; // Keep menu hidden
-                    navLinks.style.display = "none"; // Hide nav for desktops
-                } else {
-                    navLinks.style.display = "block"; // Show nav for smaller screens
-                }
-            });
-        </script>
-    </body>
+      <h1><span class="glitch">SHEIKH RIDWAN</span></h1>
+      <div class="subtitle">
+        <span id="typewriter"></span><span class="cursor"></span>
+      </div>
+
+      <p class="tagline">I build systems. I craft identities. I solve problems.</p>
+      <p class="location"><span>></span> Based in Maebashi, Japan <span>|</span> From Bangladesh</p>
+
+      <div class="hero-buttons">
+        <a href="showcase.html" class="btn btn-primary">[ EXPLORE_WORK ]</a>
+        <a href="experience.html" class="btn">[ VIEW_CAREER ]</a>
+        <a href="contact.html" class="btn">[ SEND_MESSAGE ]</a>
+      </div>
+
+      <div class="stats-bar">
+        <div><span>225</span> Connections</div>
+        <div><span>247</span> Followers</div>
+        <div><span>516</span> Trades Executed</div>
+        <div><span>50L+</span> BDT Revenue</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p class="footer-line"><span class="amber">></span> SHEIKH RIDWAN // DESIGN SYSTEM v2026</p>
+    <p class="footer-line">© 2026 Sheikh Ridwan — All Systems Operational</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    const navLinks = document.getElementById("navLinks");
+    function showMenu() { navLinks.classList.add('open'); }
+    function hideMenu() { navLinks.classList.remove('open'); }
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768) navLinks.classList.remove('open');
+    });
+  </script>
+</body>
 </html>

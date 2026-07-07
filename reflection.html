@@ -1,106 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My Website: A Reflection</title>
-        <link rel="stylesheet" href="styles.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Material+Symbols+Outlined&display=swap" rel="stylesheet" />
-       <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
-    <body>
-        <!-- Header Section -->
-        <section class="sub-header">
-            <nav>
-                <a href="index.html"><img src="whiteridwan.svg" alt="Logo"></a>
-                <div class="nav-links" id="navLinks">
-                    <span class="material-symbols-outlined" onclick="hideMenu()">close</span>
-                   <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="blogs.html">Showcase</a></li>
-                        <li><a href="contact me.html">Contact Me</a></li>
-                        <li><a href="reflection.html">Details</a></li>
-                    </ul>
-                </div>
-                <span class="material-symbols-outlined" onclick="showMenu()">menu</span>
-            </nav>
-             <h1>MY WEBSITE<br>A REFLECTION</h1>
-        </section>
-        
-        <!----KEY EDITS DETAILS------>
-        
-         <section class="reflection">
-        <div class="reflection-content">
-            <h2>This portfolio represents my initial steps into web development. <br>I focused on creating a simple yet functional website with key pages: Home, About, Blogs, and Contact.</h2>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>System Log — Sheikh Ridwan</title>
+  <meta name="description" content="A reflection on the journey of Sheikh Ridwan — from Bangladesh to Japan, from fixing computers to building brands.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Material+Symbols+Outlined&display=swap" rel="stylesheet">
+</head>
+<body>
+  <canvas id="matrix-canvas"></canvas>
 
-            <h3>Key Accomplishments:</h3>
-            <ul>
-                <li>Designed a visually appealing homepage with a captivating hero section, showcasing a professional background image and a clear call to action.</li>
-                <li>Created an "About Me" section to share my passion for cars and provide a glimpse into my personality. Incorporated a relevant image to enhance the visual appeal.</li>
-                <li>Structured the "Blogs" page to present my thoughts on car technology, dividing them into three distinct eras. Focused on clear and concise writing to engage the reader.</li>
-                <li>Implemented a functional contact form that allows visitors to easily get in touch with me. Included a "Thank You" message to provide a positive user experience.</li>
-            </ul>
+  <nav>
+    <a href="index.html" class="logo"><img src="whiteridwan.svg" alt="Sheikh Ridwan"></a>
+    <div class="nav-links" id="navLinks">
+      <span class="material-symbols-outlined close-btn" onclick="hideMenu()">close</span>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="showcase.html">Showcase</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="reflection.html" class="active">System Log</a></li>
+      </ul>
+    </div>
+    <span class="material-symbols-outlined" onclick="showMenu()">menu</span>
+  </nav>
 
-            <h3>Technical Highlights:</h3>
-            <ul>
-                <li>Utilized HTML and CSS to structure and style all pages, including basic responsiveness for smaller screens.</li>
-                <li>Implemented basic JavaScript functionality on the Contact page to handle form submissions and display a confirmation message.</li>
-            </ul>
+  <section class="sub-header">
+    <div class="terminal-line"><span class="prompt">></span> cat /reflection/2026</div>
+    <h1>> SYSTEM_LOG</h1>
+    <div class="breadcrumb">~ /reflection</div>
+  </section>
 
-            <h3>Areas for Future Improvement:</h3>
-            <ul>
-                <li>Enhance the visual appeal by incorporating more images, icons, and potentially background videos.</li>
-                <li>Improve the website's responsiveness across a wider range of devices.</li>
-                <li>Expand the content on the "About" and "Blogs" pages with more detailed information and engaging storytelling.</li>
-                <li>Explore more advanced CSS techniques, such as CSS Grid or Flexbox, to create more dynamic and flexible layouts.</li>
-                <li>Delve deeper into JavaScript to add interactive elements, such as animations or more complex form validation.</li>
-            </ul>
+  <section class="page-content">
+    <div class="reflection-content">
 
-            <p>This website represents a starting point for my web development journey. I'm excited to continue learning and refining my skills to create even more impressive and engaging online experiences.</p>
-        </div>
-    </section>
+      <div class="log-line"><span class="prompt">></span> Initializing reflection module...</div>
+      <div class="log-line"><span class="prompt">></span> Loading life_log_2026.bin</div>
+      <div class="log-line"><span class="prompt">></span> File loaded. 1 career. 3 countries. Countless lessons.</div>
+      <br>
 
-        
-          <section class="footer">
-        <h4>About Myself</h4>
-            <p> Sheikh Ridwan Islam<br>イスラームエスケーリドウアン</p>
-            <div class="icons">
-                <a href="https://www.facebook.com/sheikh.ridwan.islam">
-                <i class="fa fa-facebook-official"></i>
-                </a>
-                <a href="https://www.instagram.com/iamsheikhridwan/">
-                    <i class="fa fa-instagram" ></i></a>
-                <a href="https://snapchat.com/t/ridwan671">
-                    <i class="fa fa-snapchat" ></i></a>
-            </div>
-            <p>Social Contacts<br>Contact Me Here</p>
-        </section>
+      <p>Every line of code I write, every logo I design, every system I troubleshoot — it all started with a single question: <em>what happens when I press this button?</em></p>
 
+      <p>From fixing computers in Dhaka to trading crypto in Tokyo. From teaching myself design to founding an international arts organization. My career hasn't been a straight line — it's been a network of interconnected experiments.</p>
 
-        <!-- JavaScript for Toggle Menu -->
-        <script>
-            const navLinks = document.getElementById("navLinks");
+      <div class="highlight-block">
+        "Branding is the main thing which can make a product unique. If the branding is perfect, then marketing will cost less."
+      </div>
 
-            function showMenu() {
-                navLinks.style.right = "0"; // Slide menu into view
-            }
+      <p><strong>Bangladesh taught me hustle.</strong> Building Best Tech Center from zero to 50 lakh revenue with nothing but a soldering iron and a Facebook page. I learned that customer trust is earned one fixed computer at a time.</p>
 
-            function hideMenu() {
-                navLinks.style.right = "-200px"; // Slide menu out of view
-            }
+      <p><strong>Japan taught me discipline.</strong> Learning a new language at 23, navigating a new culture, and earning my IT degree while trading markets and building software. The Japanese principle of <em>kaizen</em> — continuous improvement — is now embedded in everything I do.</p>
 
-            // Hide menu for larger screens
-            window.addEventListener('resize', () => {
-                if (window.innerWidth > 1200) {
-                    navLinks.style.right = "0"; // Keep menu hidden
-                    navLinks.style.display = "none"; // Hide nav for desktops
-                } else {
-                    navLinks.style.display = "block"; // Show nav for smaller screens
-                }
-            });
-        </script>
-    </body>
+      <p><strong>Design taught me empathy.</strong> A logo isn't just a mark — it's the first impression of a dream. A brand isn't just colors — it's a promise. Every project I take on starts with understanding what someone is trying to say.</p>
+
+      <p><strong>Code taught me systems thinking.</strong> APIs, automation, bots — technology should make life simpler, not more complex. Whether I'm building a Node.js backend or diagnosing a hardware fault, the goal is the same: make it work, make it reliable, make it elegant.</p>
+
+      <div class="highlight-block">
+        "Technology only matters when it solves real human problems."
+      </div>
+
+      <p>I founded the <strong>International Society of Artists (ISA)</strong> because I believe creativity should be funded, not filtered. We secured scholarships for young artists globally — proving that a good idea, executed well, can cross any border.</p>
+
+      <p>I traded <strong>516 cryptocurrency transactions on Binance</strong> because I believe in understanding systems from the inside out. Risk management, liquidity control, market psychology — these aren't just trading skills, they're life skills.</p>
+
+      <p>And I'm still learning. Every day. Currently diving deeper into <strong>Node.js architecture, Japanese business communication, and cloud infrastructure</strong>.</p>
+
+      <p>I'm not done. I may never be. But I know one thing for certain: <strong>the best work happens when you stop choosing between being a developer and being a designer — and start being both.</strong></p>
+
+      <br>
+      <div class="log-line"><span class="prompt">></span> System log closed. Session saved.</div>
+      <div class="log-line"><span class="prompt">></span> <span class="highlight">// SHEIKH RIDWAN — To be continued.</span></div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p class="footer-line"><span class="amber">></span> SHEIKH RIDWAN // DESIGN SYSTEM v2026</p>
+    <p class="footer-line">© 2026 Sheikh Ridwan — All Systems Operational</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    const navLinks = document.getElementById("navLinks");
+    function showMenu() { navLinks.classList.add('open'); }
+    function hideMenu() { navLinks.classList.remove('open'); }
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768) navLinks.classList.remove('open');
+    });
+  </script>
+</body>
 </html>

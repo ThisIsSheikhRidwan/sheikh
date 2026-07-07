@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Showcase — Sheikh Ridwan</title>
+  <meta name="description" content="Design portfolio of Sheikh Ridwan — logos, branding, posters, and graphic design projects from 2010 to 2025.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Material+Symbols+Outlined&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <script src="gsap.min.js"></script>
+  <script src="Draggable.min.js"></script>
+</head>
+<body>
+  <canvas id="matrix-canvas"></canvas>
+
+  <nav>
+    <a href="index.html" class="logo"><img src="whiteridwan.svg" alt="Sheikh Ridwan"></a>
+    <div class="nav-links" id="navLinks">
+      <span class="material-symbols-outlined close-btn" onclick="hideMenu()">close</span>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="showcase.html" class="active">Showcase</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="reflection.html">System Log</a></li>
+      </ul>
+    </div>
+    <span class="material-symbols-outlined" onclick="showMenu()">menu</span>
+  </nav>
+
+  <section class="sub-header">
+    <div class="terminal-line"><span class="prompt">></span> ls -la /designs/</div>
+    <h1>> PORTFOLIO</h1>
+    <div class="breadcrumb">~ /showcase</div>
+  </section>
+
+  <section class="page-content">
+    <div class="terminal-block" style="margin-bottom:30px;">
+      <span class="comment">// Displaying design projects from 2010–2025. Click an item to view details.</span>
+    </div>
+
+    <div class="view-toggle">
+      <button class="active" data-view="grid">[ GRID_VIEW ]</button>
+      <button data-view="carousel">[ CAROUSEL_3D ]</button>
+    </div>
+
+    <!-- Grid View -->
+    <div id="view-grid" class="gallery-grid">
+      <div class="gallery-item">
+        <img src="ridwanlogo.svg" alt="Ridwan Logo Design">
+        <div class="gallery-info">
+          <div class="name">> ridwanlogo.svg</div>
+          <div class="tags"><span>Logo</span><span>Branding</span></div>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="wemap.png" alt="Wemap Logo">
+        <div class="gallery-info">
+          <div class="name">> wemap.png</div>
+          <div class="tags"><span>Logo</span><span>Web</span></div>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="MINTPR.png" alt="Mint PR Design">
+        <div class="gallery-info">
+          <div class="name">> MINTPR.png</div>
+          <div class="tags"><span>Branding</span><span>PR</span></div>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="PEOPLESDJ.png" alt="Peoples DJ Design">
+        <div class="gallery-info">
+          <div class="name">> PEOPLESDJ.png</div>
+          <div class="tags"><span>Branding</span><span>Media</span></div>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="indonesianres.png" alt="Indonesian Restaurant Branding">
+        <div class="gallery-info">
+          <div class="name">> indonesianres.png</div>
+          <div class="tags"><span>Branding</span><span>Restaurant</span></div>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="Adobe_Post_20190208_145750.jpg" alt="Graphic Design Project">
+        <div class="gallery-info">
+          <div class="name">> adobe_post_0219.jpg</div>
+          <div class="tags"><span>Graphic</span><span>Social</span></div>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="41AA6EE7-0647-4C3B-8975-FF48D69EC8AB.png" alt="Logo Design">
+        <div class="gallery-info">
+          <div class="name">> brand_logo_01.png</div>
+          <div class="tags"><span>Logo</span></div>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="IMG_6652.JPG" alt="Design Work">
+        <div class="gallery-info">
+          <div class="name">> design_work.jpg</div>
+          <div class="tags"><span>Print</span><span>Design</span></div>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="brand_identity_square.png" alt="Best Tech Center Logo">
+        <div class="gallery-info">
+          <div class="name">> Best Tech Center</div>
+          <div class="tags"><span>Identity</span><span>Branding</span></div>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="5D37E0EA-A367-401F-9FC9-80205980A54C.png" alt="Logo Concept">
+        <div class="gallery-info">
+          <div class="name">> logo_concept.png</div>
+          <div class="tags"><span>Logo</span><span>Concept</span></div>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="Adobe_Post_20181127_160448.jpg" alt="Social Media Design">
+        <div class="gallery-info">
+          <div class="name">> social_post_1118.jpg</div>
+          <div class="tags"><span>Social</span><span>Graphic</span></div>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="Adobe_Post_20181218_004336.jpg" alt="Poster Design">
+        <div class="gallery-info">
+          <div class="name">> poster_design.jpg</div>
+          <div class="tags"><span>Poster</span><span>Print</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Vertical 3D Carousel View (hidden by default) -->
+    <div id="view-carousel" style="display:none;">
+      <div class="v3d-main">
+        <div class="v3d-carousel-section">
+          <div class="v3d-carousel-container">
+            <button class="v3d-nav-arrow v3d-up" onclick="v3dRotate(-1)">&#9650;</button>
+            <div class="v3d-carousel-track" id="v3dTrack"></div>
+            <button class="v3d-nav-arrow v3d-down" onclick="v3dRotate(1)">&#9660;</button>
+          </div>
+        </div>
+        <div class="v3d-info-section">
+          <div class="v3d-member-info">
+            <div class="v3d-member-name" id="v3dName">ridwanlogo.svg</div>
+            <div class="v3d-member-role" id="v3dRole">Logo Design</div>
+          </div>
+          <div class="v3d-dots" id="v3dDots"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p class="footer-line"><span class="amber">></span> SHEIKH RIDWAN // DESIGN SYSTEM v2026</p>
+    <p class="footer-line">© 2026 Sheikh Ridwan — All Systems Operational</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    const navLinks = document.getElementById("navLinks");
+    function showMenu() { navLinks.classList.add('open'); }
+    function hideMenu() { navLinks.classList.remove('open'); }
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768) navLinks.classList.remove('open');
+    });
+
+    // === VERTICAL 3D TEAM CAROUSEL ===
+    const v3dImages = [
+      { img: 'ridwanlogo.svg', name: 'Ridwan Logo', role: 'Logo Design' },
+      { img: 'wemap.png', name: 'Wemap', role: 'Web Branding' },
+      { img: 'MINTPR.png', name: 'Mint PR', role: 'PR Branding' },
+      { img: 'PEOPLESDJ.png', name: 'Peoples DJ', role: 'Media Branding' },
+      { img: 'indonesianres.png', name: 'Indonesian Restaurant', role: 'Restaurant Branding' },
+      { img: 'Adobe_Post_20190208_145750.jpg', name: 'Adobe Post', role: 'Graphic Design' },
+      { img: '41AA6EE7-0647-4C3B-8975-FF48D69EC8AB.png', name: 'Brand Logo', role: 'Logo Design' },
+      { img: 'IMG_6652.JPG', name: 'Design Work', role: 'Print Design' },
+      { img: 'brand_identity_square.png', name: 'Best Tech Center', role: 'Brand Identity' },
+      { img: '5D37E0EA-A367-401F-9FC9-80205980A54C.png', name: 'Logo Concept', role: 'Concept Design' },
+      { img: 'Adobe_Post_20181127_160448.jpg', name: 'Social Post', role: 'Social Media' }
+    ];
+
+    let v3dIdx = 0;
+    let v3dAnimating = false;
+    let v3dBuilt = false;
+
+    document.querySelectorAll('[data-view]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('[data-view]').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const view = btn.dataset.view;
+        document.getElementById('view-grid').style.display = view === 'grid' ? 'grid' : 'none';
+        document.getElementById('view-carousel').style.display = view === 'carousel' ? 'block' : 'none';
+        if (view === 'carousel') setTimeout(buildV3d, 100);
+      });
+    });
+
+    function buildV3d() {
+      if (v3dBuilt) { updateV3d(0); return; }
+      v3dBuilt = true;
+
+      const track = document.getElementById('v3dTrack');
+      const dotsEl = document.getElementById('v3dDots');
+
+      v3dImages.forEach((item, i) => {
+        const card = document.createElement('div');
+        card.className = 'v3d-card';
+        card.dataset.index = i;
+        card.innerHTML = `<img src="${item.img}" alt="${item.name}">`;
+        card.addEventListener('click', () => updateV3d(i));
+        track.appendChild(card);
+      });
+
+      v3dImages.forEach((_, i) => {
+        const dot = document.createElement('div');
+        dot.className = 'v3d-dot' + (i === 0 ? ' v3d-active' : '');
+        dot.dataset.index = i;
+        dot.addEventListener('click', () => updateV3d(i));
+        dotsEl.appendChild(dot);
+      });
+
+      updateV3d(0);
+    }
+
+    function updateV3d(newIdx) {
+      if (v3dAnimating) return;
+      v3dAnimating = true;
+
+      v3dIdx = (newIdx + v3dImages.length) % v3dImages.length;
+
+      const cards = document.querySelectorAll('.v3d-card');
+      const dots = document.querySelectorAll('.v3d-dot');
+      const nameEl = document.getElementById('v3dName');
+      const roleEl = document.getElementById('v3dRole');
+
+      cards.forEach((card, i) => {
+        const offset = (i - v3dIdx + v3dImages.length) % v3dImages.length;
+
+        card.classList.remove('v3d-center', 'v3d-up-1', 'v3d-up-2', 'v3d-down-1', 'v3d-down-2', 'v3d-hidden');
+
+        if (offset === 0) card.classList.add('v3d-center');
+        else if (offset === 1) card.classList.add('v3d-down-1');
+        else if (offset === 2) card.classList.add('v3d-down-2');
+        else if (offset === v3dImages.length - 1) card.classList.add('v3d-up-1');
+        else if (offset === v3dImages.length - 2) card.classList.add('v3d-up-2');
+        else card.classList.add('v3d-hidden');
+      });
+
+      dots.forEach((dot, i) => dot.classList.toggle('v3d-active', i === v3dIdx));
+
+      nameEl.style.opacity = '0';
+      roleEl.style.opacity = '0';
+
+      setTimeout(() => {
+        nameEl.textContent = v3dImages[v3dIdx].name;
+        roleEl.textContent = v3dImages[v3dIdx].role;
+        nameEl.style.opacity = '1';
+        roleEl.style.opacity = '1';
+      }, 300);
+
+      setTimeout(() => { v3dAnimating = false; }, 800);
+    }
+
+    function v3dRotate(dir) {
+      updateV3d(v3dIdx + dir);
+    }
+
+    // Keyboard
+    document.addEventListener('keydown', (e) => {
+      if (document.getElementById('view-carousel').style.display === 'none') return;
+      if (e.key === 'ArrowUp') v3dRotate(-1);
+      if (e.key === 'ArrowDown') v3dRotate(1);
+    });
+
+    // Touch swipe
+    let v3dTouchStart = 0;
+    document.addEventListener('touchstart', (e) => { v3dTouchStart = e.changedTouches[0].screenY; });
+    document.addEventListener('touchend', (e) => {
+      if (document.getElementById('view-carousel').style.display === 'none') return;
+      const diff = v3dTouchStart - e.changedTouches[0].screenY;
+      if (Math.abs(diff) > 50) v3dRotate(diff > 0 ? 1 : -1);
+    });
+  </script>
+</body>
+</html>
