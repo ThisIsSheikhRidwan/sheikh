@@ -560,6 +560,7 @@ nav .material-symbols-outlined {
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: 400px;
   gap: 20px;
 }
 
@@ -568,7 +569,6 @@ nav .material-symbols-outlined {
   background: #0a0a0a;
   border: 1px solid var(--border);
   transition: 0.4s;
-  overflow: hidden;
 }
 
 .gallery-item::before {
@@ -599,34 +599,34 @@ nav .material-symbols-outlined {
   display: block;
 }
 
+.gallery-item:has(img[src$=".png"]),
 .gallery-item:has(img[src$=".jpg"]),
 .gallery-item:has(img[src$=".JPG"]) {
-  background: var(--surface);
-}
-
-.gallery-item:has(img[src$=".jpg"])::before,
-.gallery-item:has(img[src$=".JPG"])::before {
-  display: none;
-}
-
-.gallery-item:has(img[src$=".jpg"]) img,
-.gallery-item:has(img[src$=".JPG"]) img {
-  object-fit: contain;
-  padding: 8px;
-}
-
-.gallery-item:has(img[src$=".png"]) {
-  aspect-ratio: 1/1;
   display: flex;
   flex-direction: column;
 }
 
-.gallery-item:has(img[src$=".png"]) img {
+.gallery-item:has(img[src$=".png"]) img,
+.gallery-item:has(img[src$=".jpg"]) img,
+.gallery-item:has(img[src$=".JPG"]) img {
+  object-fit: contain;
+  padding: 8px;
+  height: auto;
+  transform: scale(0.85);
+}
+
+.gallery-item:has(img[src$=".svg"]) {
+  background: var(--surface);
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery-item:has(img[src$=".svg"])::before { display: none; }
+.gallery-item:has(img[src$=".svg"]) img {
   object-fit: contain;
   padding: 8px;
   height: auto;
   flex: 1;
-  transform: scale(0.85);
 }
 
 .gallery-item img.square-crop,
