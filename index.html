@@ -8,12 +8,82 @@
   <meta property="og:title" content="Sheikh Ridwan — Full-Stack Developer & Designer">
   <meta property="og:description" content="I build systems. I craft identities. I solve problems.">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="https://ridworld.netlify.app/whiteridwan.svg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sheikh Ridwan — Full-Stack Developer & Designer">
+  <meta name="twitter:description" content="I build systems. I craft identities. I solve problems.">
+  <meta name="twitter:image" content="https://ridworld.netlify.app/whiteridwan.svg">
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Material+Symbols+Outlined&display=swap" rel="stylesheet">
+  <style>
+    .preloader {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw; height: 100vh;
+      background: #0a0a0a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      z-index: 9999;
+      transition: opacity 0.6s ease, visibility 0.6s ease;
+    }
+    .preloader.hide {
+      opacity: 0;
+      visibility: hidden;
+    }
+    .preloader-logo {
+      width: 120px;
+      height: 120px;
+      margin-bottom: 30px;
+      animation: preloader-pulse 1.5s infinite;
+    }
+    .preloader-bar {
+      width: 200px;
+      height: 3px;
+      background: #2a2a2a;
+      border-radius: 2px;
+      overflow: hidden;
+    }
+    .preloader-bar-fill {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, #FFB800, #FFD700);
+      border-radius: 2px;
+      animation: preloader-fill 2s ease forwards;
+    }
+    .preloader-text {
+      font-family: 'Courier New', monospace;
+      color: #FFB800;
+      font-size: 12px;
+      margin-top: 16px;
+      letter-spacing: 2px;
+      animation: preloader-blink 1s step-end infinite;
+    }
+    @keyframes preloader-pulse {
+      0%, 100% { transform: scale(1); filter: drop-shadow(0 0 10px rgba(255,184,0,0.3)); }
+      50% { transform: scale(1.05); filter: drop-shadow(0 0 25px rgba(255,184,0,0.6)); }
+    }
+    @keyframes preloader-fill {
+      0% { width: 0%; }
+      100% { width: 100%; }
+    }
+    @keyframes preloader-blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+  </style>
 </head>
 <body>
+  <div class="preloader" id="preloader">
+    <img src="whiteridwan.svg" alt="Loading" class="preloader-logo">
+    <div class="preloader-bar"><div class="preloader-bar-fill"></div></div>
+    <div class="preloader-text">> LOADING_SYSTEM...</div>
+  </div>
   <canvas id="matrix-canvas"></canvas>
 
   <nav>
@@ -78,6 +148,13 @@
     function hideMenu() { navLinks.classList.remove('open'); }
     window.addEventListener('resize', () => {
       if (window.innerWidth > 768) navLinks.classList.remove('open');
+    });
+  </script>
+  <script>
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        document.getElementById('preloader').classList.add('hide');
+      }, 2200);
     });
   </script>
 </body>
