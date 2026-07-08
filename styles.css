@@ -578,7 +578,7 @@ nav .material-symbols-outlined {
   left: 0;
   right: 0;
   bottom: 73px;
-  background: radial-gradient(circle at center, #fff 0%, #fff 20%, transparent 45%);
+  background: radial-gradient(ellipse at center, #ffda79 0%, #ffda79 25%, rgba(255,218,121,0.3) 50%, transparent 80%);
   filter: blur(40px);
   pointer-events: none;
   z-index: 0;
@@ -630,6 +630,7 @@ nav .material-symbols-outlined {
   padding: 8px;
   height: auto;
   flex: 1;
+  transform: scale(0.85);
 }
 
 .gallery-item img.square-crop,
@@ -738,7 +739,7 @@ nav .material-symbols-outlined {
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at center, #fff 0%, #fff 20%, transparent 45%);
+  background: radial-gradient(ellipse at center, #ffda79 0%, #ffda79 25%, rgba(255,218,121,0.3) 50%, transparent 80%);
   filter: blur(40px);
   pointer-events: none;
   z-index: 0;
