@@ -73,84 +73,84 @@
     <!-- Grid View -->
     <div id="view-grid" class="gallery-grid">
       <div class="gallery-item">
-        <img src="whiteridwan.svg" alt="Sheikh Ridwan Logo">
+        <img loading="lazy" src="whiteridwan.svg" alt="Sheikh Ridwan Logo">
         <div class="gallery-info">
           <div class="name">> Sheikh Ridwan Logo</div>
           <div class="tags"><span>Logo</span><span>Branding</span></div>
         </div>
       </div>
       <div class="gallery-item">
-        <img src="wemap.png" alt="Wemap Logo">
+        <img loading="lazy" src="wemap.png" alt="Wemap Logo">
         <div class="gallery-info">
           <div class="name">> We Map Travel Agency</div>
           <div class="tags"><span>Logo</span><span>Web</span></div>
         </div>
       </div>
       <div class="gallery-item">
-        <img src="MINTPR.png" alt="Mint PR Design">
+        <img loading="lazy" src="MINTPR.png" alt="Mint PR Design">
         <div class="gallery-info">
           <div class="name">> Mint Production House</div>
           <div class="tags"><span>Branding</span><span>PR</span></div>
         </div>
       </div>
       <div class="gallery-item">
-        <img src="PEOPLESDJ.png" alt="Peoples DJ Design">
+        <img loading="lazy" src="PEOPLESDJ.png" alt="Peoples DJ Design">
         <div class="gallery-info">
           <div class="name">> PEOPLES DJ</div>
           <div class="tags"><span>Branding</span><span>Media</span></div>
         </div>
       </div>
       <div class="gallery-item">
-        <img src="indonesianres.png" alt="Indonesian Restaurant Branding">
+        <img loading="lazy" src="indonesianres.png" alt="Indonesian Restaurant Branding">
         <div class="gallery-info">
           <div class="name">> Indonesian restaurant</div>
           <div class="tags"><span>Branding</span><span>Restaurant</span></div>
         </div>
       </div>
       <div class="gallery-item">
-        <img src="Adobe_Post_20190208_145750.jpg" alt="Graphic Design Project">
+        <img loading="lazy" src="Adobe_Post_20190208_145750.jpg" alt="Graphic Design Project">
         <div class="gallery-info">
           <div class="name">> Grandiose Production House</div>
           <div class="tags"><span>Graphic</span><span>Social</span></div>
         </div>
       </div>
       <div class="gallery-item">
-        <img src="41AA6EE7-0647-4C3B-8975-FF48D69EC8AB.png" alt="Logo Design">
+        <img loading="lazy" src="41AA6EE7-0647-4C3B-8975-FF48D69EC8AB.png" alt="Logo Design">
         <div class="gallery-info">
           <div class="name">> International Society Of Artists</div>
           <div class="tags"><span>Logo</span></div>
         </div>
       </div>
       <div class="gallery-item">
-        <img src="IMG_6652.JPG" alt="Design Work">
+        <img loading="lazy" src="IMG_6652.JPG" alt="Design Work">
         <div class="gallery-info">
           <div class="name">> Team Omega</div>
           <div class="tags"><span>Print</span><span>Design</span></div>
         </div>
       </div>
       <div class="gallery-item">
-        <img src="brand_identity_square.png" alt="Best Tech Center Logo">
+        <img loading="lazy" src="brand_identity_square.png" alt="Best Tech Center Logo">
         <div class="gallery-info">
           <div class="name">> Best Tech Center</div>
           <div class="tags"><span>Identity</span><span>Branding</span></div>
         </div>
       </div>
       <div class="gallery-item">
-        <img src="5D37E0EA-A367-401F-9FC9-80205980A54C.png" alt="Logo Concept">
+        <img loading="lazy" src="5D37E0EA-A367-401F-9FC9-80205980A54C.png" alt="Logo Concept">
         <div class="gallery-info">
           <div class="name">> Blood Bank Of Bangladesh</div>
           <div class="tags"><span>Logo</span><span>Concept</span></div>
         </div>
       </div>
       <div class="gallery-item">
-        <img src="Adobe_Post_20181127_160448.jpg" alt="Social Media Design">
+        <img loading="lazy" src="Adobe_Post_20181127_160448.jpg" alt="Social Media Design">
         <div class="gallery-info">
           <div class="name">> Fast-Sheba.Com</div>
           <div class="tags"><span>Social</span><span>Graphic</span></div>
         </div>
       </div>
       <div class="gallery-item">
-        <img src="Adobe_Post_20181218_004336.jpg" alt="Poster Design">
+        <img loading="lazy" src="Adobe_Post_20181218_004336.jpg" alt="Poster Design">
         <div class="gallery-info">
           <div class="name">> Deshi DNA</div>
           <div class="tags"><span>Poster</span><span>Print</span></div>
@@ -257,7 +257,7 @@
         const card = document.createElement('div');
         card.className = 'v3d-card';
         card.dataset.index = i;
-        card.innerHTML = `<img src="${item.img}" alt="${item.name}">`;
+        card.innerHTML = `<img loading="lazy" src="${item.img}" alt="${item.name}">`;
         card.addEventListener('click', () => updateV3d(i));
         track.appendChild(card);
       });
