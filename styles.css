@@ -1329,6 +1329,99 @@ nav .material-symbols-outlined {
   color: var(--amber);
 }
 
+.case-full {
+  display: none;
+  border-top: 1px solid var(--border);
+  margin-top: 16px;
+  padding-top: 16px;
+}
+
+.case-full.open {
+  display: block;
+}
+
+.case-section {
+  margin-bottom: 16px;
+}
+
+.case-section-title {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--amber);
+  margin-bottom: 8px;
+}
+
+.case-section p {
+  font-size: 13px;
+  color: var(--text);
+  line-height: 1.7;
+  margin-bottom: 8px;
+}
+
+.case-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.case-section ul li {
+  font-size: 13px;
+  color: var(--text);
+  padding: 3px 0;
+  padding-left: 16px;
+  position: relative;
+}
+
+.case-section ul li::before {
+  content: '>';
+  position: absolute;
+  left: 0;
+  color: var(--amber);
+  font-family: var(--font-mono);
+}
+
+.case-toggle {
+  display: inline-block;
+  margin-top: 16px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  padding: 8px 16px;
+  border: 1px solid var(--amber);
+  background: transparent;
+  color: var(--amber);
+  cursor: pointer;
+  transition: 0.3s;
+  letter-spacing: 1px;
+}
+
+.case-toggle:hover {
+  background: var(--amber);
+  color: var(--bg);
+  box-shadow: 0 0 15px rgba(255, 184, 0, 0.3);
+}
+
+.case-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.case-links a {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  padding: 6px 14px;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  transition: 0.3s;
+}
+
+.case-links a:hover {
+  border-color: var(--amber);
+  color: var(--amber);
+  box-shadow: 0 0 12px rgba(255, 184, 0, 0.15);
+}
+
 /* === LINKEDIN BADGE === */
 .badge-base.LI-profile-badge {
   display: inline-block;
