@@ -53,11 +53,74 @@ nav {
   backdrop-filter: blur(10px);
 }
 
-nav .logo img {
-  height: 40px;
+nav .logo {
+  display: flex;
+  align-items: center;
 }
 
-.nav-links ul {
+nav .logo img {
+  height: 40px;
+  display: block;
+}
+
+/* === NAV BADGES === */
+.nav-badges {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: 16px;
+  margin-right: auto;
+}
+
+.nav-sep {
+  width: 1px;
+  height: 30px;
+  background: var(--border);
+  flex-shrink: 0;
+}
+
+.nav-badges .github-profile-badge {
+  margin-bottom: 0;
+}
+
+.nav-badges .github-profile-badge .github-profile-badge-wrapper {
+  padding: 4px 12px !important;
+  background: transparent !important;
+  border: none !important;
+  gap: 8px;
+}
+
+.nav-badges .github-profile-badge .github-profile-badge-img-wrapper {
+  height: 28px !important;
+}
+
+.nav-badges .github-profile-badge .github-profile-badge-img {
+  width: 28px !important;
+  height: 28px !important;
+}
+
+.nav-badges .github-profile-badge .github-profile-badge-logo {
+  width: 14px !important;
+  height: 14px !important;
+  right: -3px !important;
+  bottom: -3px !important;
+}
+
+.nav-badges .github-profile-badge .github-profile-badge-name {
+  font-size: 12px !important;
+  color: var(--text-muted) !important;
+}
+
+.nav-badges .github-profile-badge .github-profile-badge-wrapper:hover {
+  border-color: var(--amber) !important;
+  box-shadow: none !important;
+}
+
+.nav-badges .github-profile-badge .github-profile-badge-wrapper:hover .github-profile-badge-name {
+  color: var(--amber) !important;
+}
+
+.nav-links > ul {
   display: flex;
   list-style: none;
   gap: 8px;
@@ -81,6 +144,75 @@ nav .logo img {
 .nav-links ul li a.active::before {
   content: '> ';
   color: var(--amber);
+}
+
+/* === NAV DROPDOWN === */
+.nav-dropdown {
+  position: relative;
+}
+
+.nav-dropdown-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--font-mono);
+  font-size: 14px;
+  color: var(--text);
+  padding: 8px 14px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: 0.3s;
+  user-select: none;
+}
+
+.nav-dropdown-btn:hover,
+.nav-dropdown-btn.active {
+  color: var(--amber);
+  border-color: var(--amber);
+  text-shadow: 0 0 10px var(--amber);
+}
+
+.nav-dropdown-btn.active::before {
+  content: '> ';
+  color: var(--amber);
+}
+
+.dd-arrow {
+  font-size: 10px;
+}
+
+.nav-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 190px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  display: none;
+  flex-direction: column;
+  padding: 6px 0;
+  z-index: 1001;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.nav-dropdown:hover .nav-dropdown-menu,
+.nav-dropdown.open .nav-dropdown-menu {
+  display: flex;
+}
+
+.nav-dropdown-menu li a {
+  display: block;
+  padding: 10px 16px;
+  font-size: 13px;
+  color: var(--text);
+  border: none;
+  white-space: nowrap;
+}
+
+.nav-dropdown-menu li a:hover {
+  color: var(--amber);
+  background: var(--surface-hover);
+  text-shadow: none;
 }
 
 nav .material-symbols-outlined {
@@ -318,7 +450,11 @@ nav .material-symbols-outlined {
 }
 
 .about-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+  gap: 16px;
 }
 
 .about-image img {
@@ -1488,11 +1624,152 @@ nav .material-symbols-outlined {
 .badge-base.LI-profile-badge {
   display: inline-block;
   max-width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 0;
 }
 
 .badge-base .LI-simple-link {
-  display: none;
+  display: block;
+}
+
+.li-fallback-card {
+  width: 250px;
+  background: #111111;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 20px 16px;
+  text-align: center;
+  font-family: var(--font-mono);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  transition: 0.3s;
+}
+
+.li-fallback-card:hover {
+  border-color: var(--amber);
+  box-shadow: 0 0 25px rgba(255, 184, 0, 0.15);
+}
+
+.li-fallback-avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid var(--amber);
+  margin-bottom: 12px;
+  object-fit: cover;
+}
+
+.li-fallback-name {
+  color: var(--amber);
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.li-fallback-title {
+  color: var(--text-muted);
+  font-size: 11px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.li-fallback-btn {
+  display: inline-block;
+  font-size: 11px;
+  color: var(--amber);
+  border: 1px solid var(--amber);
+  padding: 6px 14px;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.li-fallback-card:hover .li-fallback-btn {
+  background: var(--amber);
+  color: var(--bg);
+}
+
+.li-fallback-horizontal {
+  width: 330px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-align: left;
+  padding: 16px;
+}
+
+.li-fallback-horizontal .li-fallback-avatar {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 0;
+  flex-shrink: 0;
+}
+
+.li-fallback-horizontal .li-fallback-info {
+  flex: 1;
+}
+
+.li-fallback-horizontal .li-fallback-name {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.li-fallback-horizontal .li-fallback-title {
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+
+/* === GITHUB PROFILE BADGE === */
+.github-profile-badge {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.github-profile-badge .github-profile-badge-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--surface) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 4px !important;
+  padding: 10px 18px !important;
+  transition: 0.3s;
+}
+
+.github-profile-badge .github-profile-badge-wrapper:hover {
+  border-color: var(--amber) !important;
+  box-shadow: 0 0 15px rgba(255, 184, 0, 0.1);
+}
+
+.github-profile-badge .github-profile-badge-img-wrapper {
+  position: relative !important;
+  display: inline-flex !important;
+  align-items: center !important;
+}
+
+.github-profile-badge .github-profile-badge-img {
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50% !important;
+  border: 1px solid var(--amber) !important;
+  margin: 0 !important;
+}
+
+.github-profile-badge .github-profile-badge-logo {
+  position: absolute !important;
+  right: -4px !important;
+  bottom: -4px !important;
+  width: 18px !important;
+  height: 18px !important;
+  border-radius: 50% !important;
+  background: #fff !important;
+  padding: 2px !important;
+  margin: 0 !important;
+}
+
+.github-profile-badge .github-profile-badge-name {
+  font-family: var(--font-mono) !important;
+  font-size: 13px !important;
+  color: var(--text) !important;
+  margin: 0 !important;
 }
 
 @media(max-width: 768px) {
@@ -1552,6 +1829,32 @@ footer .amber { color: var(--amber); }
     padding: 12px 20px;
   }
 
+  .nav-badges {
+    margin-left: 10px;
+    margin-right: auto;
+    gap: 8px;
+  }
+
+  .nav-badges .github-profile-badge .github-profile-badge-name-wrapper {
+    display: none;
+  }
+
+  .nav-badges .github-profile-badge .github-profile-badge-img-wrapper {
+    height: 24px !important;
+  }
+
+  .nav-badges .github-profile-badge .github-profile-badge-img {
+    width: 24px !important;
+    height: 24px !important;
+  }
+
+  .nav-badges .github-profile-badge .github-profile-badge-logo {
+    width: 12px !important;
+    height: 12px !important;
+    right: -3px !important;
+    bottom: -3px !important;
+  }
+
   nav .material-symbols-outlined {
     display: block;
   }
@@ -1573,7 +1876,7 @@ footer .amber { color: var(--amber); }
     right: 0;
   }
 
-  .nav-links ul {
+  .nav-links > ul {
     flex-direction: column;
     gap: 4px;
   }
@@ -1582,6 +1885,28 @@ footer .amber { color: var(--amber); }
     display: block;
     padding: 12px 16px;
     font-size: 14px;
+  }
+
+  .nav-dropdown {
+    position: static;
+  }
+
+  .nav-dropdown-btn {
+    padding: 12px 16px;
+  }
+
+  .nav-dropdown-menu {
+    position: static;
+    display: none;
+    border: none;
+    border-left: 1px solid var(--border);
+    margin-left: 14px;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  .nav-dropdown.open .nav-dropdown-menu {
+    display: flex;
   }
 
   .nav-links .close-btn {

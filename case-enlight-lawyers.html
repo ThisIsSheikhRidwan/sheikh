@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Enlight Lawyers — Case Study | Sheikh Ridwan</title>
+  <title>Enlight Lawyers | Case Study | Sheikh Ridwan</title>
   <meta name="description" content="Enlight Lawyers case study: brand identity, custom legal website, legal keyword SEO and AI search optimization with schema markup for a Queensland law firm. Verified live in ChatGPT and Perplexity.">
-  <meta property="og:title" content="Enlight Lawyers — Case Study | Sheikh Ridwan">
+  <meta property="og:title" content="Enlight Lawyers | Case Study | Sheikh Ridwan">
   <meta property="og:description" content="Brand identity, legal website, SEO and AI search optimization for a Queensland law firm.">
   <meta property="og:image" content="https://sheikhridwan.netlify.app/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Enlight Lawyers — Case Study | Sheikh Ridwan">
+  <meta name="twitter:title" content="Enlight Lawyers | Case Study | Sheikh Ridwan">
   <meta name="twitter:description" content="Brand identity, legal website, SEO and AI search optimization for a Queensland law firm.">
   <meta name="twitter:image" content="https://sheikhridwan.netlify.app/og-image.png">
   <link rel="canonical" href="https://sheikhridwan.netlify.app/case-enlight-lawyers.html">
@@ -25,15 +25,24 @@
 
   <nav>
     <a href="index.html" class="logo"><img src="whiteridwan.svg" alt="Sheikh Ridwan"></a>
+    <div class="nav-badges">
+      <span class="nav-sep"></span>
+      <div class="github-profile-badge" data-user="ThisIsSheikhRidwan"></div>
+    </div>
     <div class="nav-links" id="navLinks">
       <span class="material-symbols-outlined close-btn" onclick="hideMenu()">close</span>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="experience.html">Experience</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="showcase.html">Showcase</a></li>
-        <li><a href="projects.html" class="active">Projects</a></li>
+        <li class="nav-dropdown">
+          <span class="nav-dropdown-btn">Showcase <span class="dd-arrow">&#9662;</span></span>
+          <ul class="nav-dropdown-menu">
+            <li><a href="showcase.html">Showcase (Design)</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+          </ul>
+        </li>
         <li><a href="education.html">Education</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="reflection.html">System Log</a></li>
@@ -67,18 +76,18 @@
       <div class="case-section">
         <div class="case-section-title">> The Approach</div>
         <ul>
-          <li><strong>01 · Brand Identity</strong> — professional visual identity: logo, color palette, typography and brand guidelines reflecting the firm's values and expertise</li>
-          <li><strong>02 · Website & SEO</strong> — comprehensive legal-industry SEO and keyword research; a website optimized for both Google rankings and AI search visibility</li>
-          <li><strong>03 · AI Optimization</strong> — content structure and schema markup tuned for AI response generation, so the firm appears accurately in ChatGPT, Perplexity and other AI search tools</li>
+          <li><strong>01 · Brand Identity:</strong> professional visual identity: logo, color palette, typography and brand guidelines reflecting the firm's values and expertise</li>
+          <li><strong>02 · Website & SEO:</strong> comprehensive legal-industry SEO and keyword research; a website optimized for both Google rankings and AI search visibility</li>
+          <li><strong>03 · AI Optimization:</strong> content structure and schema markup tuned for AI response generation, so the firm appears accurately in ChatGPT, Perplexity and other AI search tools</li>
         </ul>
       </div>
 
       <div class="case-section">
         <div class="case-section-title">> Results</div>
         <ul>
-          <li><strong>Complete</strong> — full brand identity and digital presence</li>
-          <li><strong>SEO</strong> — comprehensive legal keyword research</li>
-          <li><strong>AI-Ready</strong> — firm surfaces accurately in ChatGPT and Perplexity answers, verified live</li>
+          <li><strong>Complete:</strong> full brand identity and digital presence</li>
+          <li><strong>SEO:</strong> comprehensive legal keyword research</li>
+          <li><strong>AI-Ready:</strong> firm surfaces accurately in ChatGPT and Perplexity answers, verified live</li>
         </ul>
       </div>
 
@@ -103,12 +112,22 @@
   </footer>
 
   <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/Rapsssito/github-profile-badge@latest/src/widget.min.js"></script>
   <script>
     const navLinks = document.getElementById("navLinks");
     function showMenu() { navLinks.classList.add('open'); }
     function hideMenu() { navLinks.classList.remove('open'); }
     window.addEventListener('resize', () => {
       if (window.innerWidth > 768) navLinks.classList.remove('open');
+    });
+
+    document.querySelectorAll('.nav-dropdown-btn').forEach(function(btn) {
+      btn.addEventListener('click', function(e) {
+        if (window.innerWidth <= 768) {
+          e.preventDefault();
+          btn.parentElement.classList.toggle('open');
+        }
+      });
     });
   </script>
 </body>
