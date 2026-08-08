@@ -144,12 +144,18 @@
     });
 
     document.querySelectorAll('.nav-dropdown-btn').forEach(function(btn) {
-      btn.addEventListener('click', function(e) {
+      var lastTouch = 0;
+      function toggleDropdown(e) {
         if (window.innerWidth <= 768) {
           e.preventDefault();
+          var now = Date.now();
+          if (now - lastTouch < 400) return;
+          if (e.type === 'touchstart' || e.type === 'touchend') { lastTouch = now; }
           btn.parentElement.classList.toggle('open');
         }
-      });
+      }
+      btn.addEventListener('click', toggleDropdown);
+      btn.addEventListener('touchstart', toggleDropdown, { passive: false });
     });
   </script>
 </body>
