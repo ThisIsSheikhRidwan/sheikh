@@ -126,7 +126,12 @@ nav .logo img {
   gap: 8px;
 }
 
-.nav-links ul li a {
+.nav-links > ul li a {
+  display: inline-flex;
+  align-items: center;
+  height: 34px;
+  line-height: 1;
+  box-sizing: border-box;
   color: var(--text);
   font-size: 14px;
   padding: 8px 14px;
@@ -157,12 +162,15 @@ nav .logo img {
   gap: 5px;
   font-family: var(--font-mono);
   font-size: 14px;
+  line-height: 1;
   color: var(--text);
   padding: 8px 14px;
   border: 1px solid transparent;
   cursor: pointer;
   transition: 0.3s;
   user-select: none;
+  height: 34px;
+  box-sizing: border-box;
 }
 
 .nav-dropdown-btn:hover,
@@ -179,6 +187,12 @@ nav .logo img {
 
 .dd-arrow {
   font-size: 10px;
+}
+
+.nav-dropdown-menu,
+.nav-dropdown-menu li {
+  list-style: none;
+  margin: 0;
 }
 
 .nav-dropdown-menu {
@@ -1893,6 +1907,7 @@ footer .amber { color: var(--amber); }
 
   .nav-dropdown-btn {
     padding: 12px 16px;
+    height: auto;
   }
 
   .nav-dropdown-menu {
