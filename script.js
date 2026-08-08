@@ -38,10 +38,10 @@ if (canvas) {
 const typewriterEl = document.getElementById('typewriter');
 if (typewriterEl) {
   const phrases = [
-    'Full-Stack Developer × Graphic Designer × Logo Specialist',
-    'Node.js || API Automation || Brand Identity',
-    'IT Support | Hardware & Software Diagnosis',
-    'I build systems. I craft identities. I solve problems.'
+    'Full-Stack Developer × AI Solutions Architect × Automation Engineer',
+    'Node.js || TypeScript || REST APIs || AI Agents',
+    'Founder & CEO @ Brainsroot Inc.',
+    'I build web apps, SaaS, and AI-powered automation.'
   ];
   let phraseIdx = 0;
   let charIdx = 0;

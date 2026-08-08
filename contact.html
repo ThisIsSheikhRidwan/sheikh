@@ -3,15 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact — Sheikh Ridwan</title>
-  <meta name="description" content="Get in touch with Sheikh Ridwan — Full-Stack Developer, Graphic Designer, and Logo Specialist based in Japan.">
+  <title>Contact — Sheikh Ridwan | Full-Stack Developer</title>
+  <meta name="description" content="Get in touch with Sheikh Ridwan — Founder & CEO of Brainsroot Inc., Full-Stack Developer and AI Solutions Architect based in Maebashi, Japan.">
+  <meta property="og:title" content="Contact — Sheikh Ridwan | Full-Stack Developer">
+  <meta property="og:description" content="Founder & CEO of Brainsroot Inc. — web apps, SaaS, desktop tools and AI-powered automation.">
   <meta property="og:image" content="https://sheikhridwan.netlify.app/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Sheikh Ridwan — Full-Stack Developer & Designer">
-  <meta name="twitter:description" content="I build systems. I craft identities. I solve problems.">
+  <meta name="twitter:title" content="Contact — Sheikh Ridwan | Full-Stack Developer">
+  <meta name="twitter:description" content="Founder & CEO of Brainsroot Inc. Web apps, AI, automation.">
   <meta name="twitter:image" content="https://sheikhridwan.netlify.app/og-image.png">
+  <link rel="canonical" href="https://sheikhridwan.netlify.app/contact.html">
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,6 +34,7 @@
         <li><a href="experience.html">Experience</a></li>
         <li><a href="skills.html">Skills</a></li>
         <li><a href="showcase.html">Showcase</a></li>
+        <li><a href="projects.html">Projects</a></li>
         <li><a href="education.html">Education</a></li>
         <li><a href="contact.html" class="active">Contact</a></li>
         <li><a href="reflection.html">System Log</a></li>
@@ -51,6 +55,12 @@
     </div>
 
     <div class="contact-form-wrap">
+      <div class="terminal-block" style="text-align:center;">
+        <span class="prompt">></span> Direct email: <a href="mailto:Ridwanislam671@gmail.com">Ridwanislam671@gmail.com</a><br>
+        <span class="prompt">></span> Studio: <a href="https://brainsroot.com/contact/" target="_blank">brainsroot.com/contact</a><br>
+        <span class="prompt">></span> Response within 24 hours.
+      </div>
+
       <div id="contactFormWrapper">
         <form id="contactForm">
           <div class="form-group">
@@ -66,6 +76,7 @@
             <textarea id="message" name="message" placeholder="Type your message..." required></textarea>
           </div>
           <button type="submit" class="btn btn-primary" style="width:100%;">[ SEND_TRANSMISSION ]</button>
+          <p style="text-align:center;font-family:var(--font-mono);font-size:11px;color:var(--text-muted);margin-top:12px;">Opens your email app with the message pre-filled → Ridwanislam671@gmail.com</p>
         </form>
       </div>
 
@@ -77,17 +88,26 @@
       </div>
 
       <div class="social-links">
+        <a href="https://brainsroot.com" target="_blank"><i class="fa fa-globe"></i> Brainsroot</a>
+        <a href="https://github.com/ThisIsSheikhRidwan" target="_blank"><i class="fa fa-github"></i> GitHub</a>
+        <a href="https://www.linkedin.com/in/sheikhridwan/" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a>
         <a href="https://www.facebook.com/sheikh.ridwan.islam" target="_blank"><i class="fa fa-facebook-official"></i> Facebook</a>
         <a href="https://www.instagram.com/iamsheikhridwan/" target="_blank"><i class="fa fa-instagram"></i> Instagram</a>
         <a href="https://snapchat.com/t/ridwan671" target="_blank"><i class="fa fa-snapchat"></i> Snapchat</a>
-        <a href="https://www.linkedin.com/in/sheikhridwan/" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a>
       </div>
     </div>
   </section>
 
   <footer>
-    <p class="footer-line"><span class="amber">></span> SHEIKH RIDWAN // DESIGN SYSTEM v2026</p>
+    <p class="footer-line"><span class="amber">></span> SHEIKH RIDWAN // FULL-STACK DEVELOPER // BRAINSROOT INC.</p>
     <p class="footer-line">© 2026 Sheikh Ridwan — All Systems Operational</p>
+    <p class="footer-line">
+      <a href="https://brainsroot.com" target="_blank">brainsroot.com</a> ·
+      <a href="https://github.com/ThisIsSheikhRidwan" target="_blank">GitHub</a> ·
+      <a href="https://www.linkedin.com/in/sheikhridwan" target="_blank">LinkedIn</a> ·
+      <a href="https://www.facebook.com/sheikh.ridwan.islam" target="_blank">Facebook</a> ·
+      <a href="https://www.instagram.com/iamsheikhridwan" target="_blank">Instagram</a>
+    </p>
   </footer>
 
   <script src="script.js"></script>
@@ -105,6 +125,12 @@
 
     form.addEventListener('submit', function(e) {
       e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+      const subject = encodeURIComponent('Portfolio message from ' + name);
+      const body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\n' + message);
+      window.location.href = 'mailto:Ridwanislam671@gmail.com?subject=' + subject + '&body=' + body;
       formWrapper.style.display = 'none';
       thankYou.style.display = 'block';
     });

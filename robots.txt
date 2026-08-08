@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sheikhridwan.netlify.app/sitemap.xml

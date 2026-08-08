@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Sheikh Ridwan | Full-Stack Developer</title>
+  <meta name="description" content="Case studies by Sheikh Ridwan: Orion AI (Discord AI assistant), Enlight Lawyers (Queensland law firm), Sugarbill (invoice app), Hamim Ally portfolio, Brainsroot.com.">
+  <meta property="og:title" content="Projects — Sheikh Ridwan | Full-Stack Developer">
+  <meta property="og:description" content="Case studies: Orion AI, Enlight Lawyers, Sugarbill, Hamim Ally portfolio, Brainsroot.com.">
+  <meta property="og:image" content="https://sheikhridwan.netlify.app/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Projects — Sheikh Ridwan | Full-Stack Developer">
+  <meta name="twitter:description" content="Case studies: Orion AI, Enlight Lawyers, Sugarbill, Hamim Ally portfolio, Brainsroot.com.">
+  <meta name="twitter:image" content="https://sheikhridwan.netlify.app/og-image.png">
+  <link rel="canonical" href="https://sheikhridwan.netlify.app/projects.html">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@300;400;600&family=Material+Symbols+Outlined&display=swap" rel="stylesheet">
+</head>
+<body>
+  <canvas id="matrix-canvas"></canvas>
+
+  <nav>
+    <a href="index.html" class="logo"><img src="whiteridwan.svg" alt="Sheikh Ridwan"></a>
+    <div class="nav-links" id="navLinks">
+      <span class="material-symbols-outlined close-btn" onclick="hideMenu()">close</span>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="showcase.html">Showcase</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="reflection.html">System Log</a></li>
+      </ul>
+    </div>
+    <span class="material-symbols-outlined" onclick="showMenu()">menu</span>
+  </nav>
+
+  <section class="sub-header">
+    <div class="terminal-line"><span class="prompt">></span> ls -la /projects/case-studies</div>
+    <h1>> PROJECTS.EXE</h1>
+    <div class="breadcrumb">~ /projects</div>
+  </section>
+
+  <section class="page-content">
+    <div class="terminal-block" style="margin-bottom:40px;">
+      <span class="comment">// 5 shipped projects. Real clients. Real results. Built end-to-end with AI-assisted workflows.</span>
+    </div>
+
+    <div class="case-grid">
+
+      <!-- Orion AI -->
+      <div class="case-card">
+        <div class="case-num">01</div>
+        <div class="case-title">> ORION_AI</div>
+        <div class="case-client">Internal Product · Brainsroot Inc.</div>
+        <div class="case-meta">AI Assistant · Discord · Automation</div>
+        <p class="case-desc">An AI assistant that runs a complete virtual office inside Discord: server admin, memory, web research, scheduled standups and reminders, and content drafting.</p>
+        <ul class="case-points">
+          <li>Replaced paid Slack for my own company — <strong>saving the monthly subscription</strong></li>
+          <li>Automates standups, reminders and research on a schedule</li>
+          <li>Persistent memory across conversations</li>
+        </ul>
+        <div class="case-stack">
+          <span>Node.js</span><span>Discord API</span><span>AI Agents</span><span>Automation</span>
+        </div>
+      </div>
+
+      <!-- Enlight Lawyers -->
+      <div class="case-card">
+        <div class="case-num">02</div>
+        <div class="case-title">ENLIGHT_LAWYERS</div>
+        <div class="case-client">Queensland Law Firm · 2025</div>
+        <div class="case-meta">Brand Identity · Legal Website · SEO</div>
+        <p class="case-desc">Custom legal website with brand identity, legal keyword SEO, and AI search optimization with schema markup — plus client templates.</p>
+        <ul class="case-points">
+          <li>Firm now surfaces <strong>accurately in ChatGPT and Perplexity answers</strong> — verified live</li>
+          <li>Trust-building design for Family, Commercial and Property Law services</li>
+          <li>Schema markup for AI search visibility</li>
+        </ul>
+        <div class="case-stack">
+          <span>Web Development</span><span>SEO</span><span>Schema Markup</span><span>Brand Identity</span>
+        </div>
+      </div>
+
+      <!-- Sugarbill -->
+      <div class="case-card">
+        <div class="case-num">03</div>
+        <div class="case-title">SUGARBILL</div>
+        <div class="case-client">Invoice App · Privacy-First</div>
+        <div class="case-meta">Web App · 100% Client-Side</div>
+        <p class="case-desc">A privacy-first invoice tool that runs entirely in the browser. No backend, no database, no accounts — your data never leaves your device.</p>
+        <ul class="case-points">
+          <li><strong>URL-based sharing</strong> — send an invoice with a link</li>
+          <li><strong>PDF and PNG export</strong> with live preview</li>
+          <li>Zero accounts, zero tracking, zero server</li>
+        </ul>
+        <div class="case-stack">
+          <span>JavaScript</span><span>Browser APIs</span><span>PDF/PNG Generation</span><span>Live Preview</span>
+        </div>
+      </div>
+
+      <!-- Hamim Ally Portfolio -->
+      <div class="case-card">
+        <div class="case-num">04</div>
+        <div class="case-title">HAMIM_ALLY_PORTFOLIO</div>
+        <div class="case-client">Ali Mubashshir (Hamim Ally) · Brainsroot Co-Founder</div>
+        <div class="case-meta">Portfolio Site · JavaScript/TypeScript</div>
+        <p class="case-desc">A fast, clean portfolio site for my Brainsroot co-founder — a full-stack developer and game maker.</p>
+        <ul class="case-points">
+          <li>Clean JavaScript and TypeScript showcase</li>
+          <li>Fast load, focused on projects and skills</li>
+        </ul>
+        <div class="case-stack">
+          <span>JavaScript</span><span>TypeScript</span><span>Responsive UI</span>
+        </div>
+      </div>
+
+      <!-- Brainsroot.com & Personal Portfolio -->
+      <div class="case-card">
+        <div class="case-num">05</div>
+        <div class="case-title">BRAINSROOT.COM</div>
+        <div class="case-client">Company Site + Personal Portfolio</div>
+        <div class="case-meta">Websites · SEO · AI-Assisted Delivery</div>
+        <p class="case-desc">Company and personal sites designed, developed and shipped with AI-assisted workflows end-to-end.</p>
+        <ul class="case-points">
+          <li><strong>SEO-optimized pages</strong> with rich schema markup (8+ schema types)</li>
+          <li>Maintained sitemap and AI search optimization</li>
+          <li>Connected brand system across both sites</li>
+        </ul>
+        <div class="case-stack">
+          <span>Astro</span><span>Next.js</span><span>SEO</span><span>Schema Markup</span><span>AI-Assisted Dev</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="terminal-block" style="margin-top:40px;text-align:center;">
+      <span class="prompt">></span> More case studies available on request — <a href="https://brainsroot.com/projects/" target="_blank">brainsroot.com/projects</a>
+    </div>
+  </section>
+
+  <footer>
+    <p class="footer-line"><span class="amber">></span> SHEIKH RIDWAN // FULL-STACK DEVELOPER // BRAINSROOT INC.</p>
+    <p class="footer-line">© 2026 Sheikh Ridwan — All Systems Operational</p>
+    <p class="footer-line">
+      <a href="https://brainsroot.com" target="_blank">brainsroot.com</a> ·
+      <a href="https://github.com/ThisIsSheikhRidwan" target="_blank">GitHub</a> ·
+      <a href="https://www.linkedin.com/in/sheikhridwan" target="_blank">LinkedIn</a> ·
+      <a href="https://www.facebook.com/sheikh.ridwan.islam" target="_blank">Facebook</a> ·
+      <a href="https://www.instagram.com/iamsheikhridwan" target="_blank">Instagram</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    const navLinks = document.getElementById("navLinks");
+    function showMenu() { navLinks.classList.add('open'); }
+    function hideMenu() { navLinks.classList.remove('open'); }
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768) navLinks.classList.remove('open');
+    });
+  </script>
+</body>
+</html>

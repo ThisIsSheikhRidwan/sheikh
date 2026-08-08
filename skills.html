@@ -3,15 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Skills — Sheikh Ridwan</title>
-  <meta name="description" content="38 verified skills across development, design, trading, business, IT, and languages. Node.js, API Engineering, Graphic Design, Branding, and more.">
+  <title>Skills — Sheikh Ridwan | Full-Stack Developer</title>
+  <meta name="description" content="Full-stack developer skills: Node.js, TypeScript, REST APIs, AI agents, n8n automation, OpenAI tooling, frontend, databases, SEO & schema markup, design, and more.">
+  <meta property="og:title" content="Skills — Sheikh Ridwan | Full-Stack Developer">
+  <meta property="og:description" content="Node.js, TypeScript, REST APIs, AI agents, n8n automation, OpenAI tooling, frontend, databases, SEO & schema markup.">
   <meta property="og:image" content="https://sheikhridwan.netlify.app/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Sheikh Ridwan — Full-Stack Developer & Designer">
-  <meta name="twitter:description" content="I build systems. I craft identities. I solve problems.">
+  <meta name="twitter:title" content="Skills — Sheikh Ridwan | Full-Stack Developer">
+  <meta name="twitter:description" content="Node.js, TypeScript, REST APIs, AI agents, n8n automation, OpenAI tooling, frontend, databases, SEO & schema markup.">
   <meta name="twitter:image" content="https://sheikhridwan.netlify.app/og-image.png">
+  <link rel="canonical" href="https://sheikhridwan.netlify.app/skills.html">
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,6 +33,7 @@
         <li><a href="experience.html">Experience</a></li>
         <li><a href="skills.html" class="active">Skills</a></li>
         <li><a href="showcase.html">Showcase</a></li>
+        <li><a href="projects.html">Projects</a></li>
         <li><a href="education.html">Education</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="reflection.html">System Log</a></li>
@@ -46,13 +50,15 @@
 
   <section class="page-content">
     <div class="terminal-block" style="margin-bottom:30px;">
-      <span class="comment">// 38 verified skills. 5 categories. 1 toolkit.</span>
+      <span class="comment">// Full-stack toolkit. 40+ skills. 8 categories. 1 developer.</span>
     </div>
 
     <div class="skills-nav">
       <button class="active" data-cat="development">Development</button>
+      <button data-cat="ai">AI & Automation</button>
+      <button data-cat="backend">Backend & APIs</button>
+      <button data-cat="frontend">Frontend</button>
       <button data-cat="design">Design</button>
-      <button data-cat="trading">Trading & Crypto</button>
       <button data-cat="business">Business & Leadership</button>
       <button data-cat="it">IT & Systems</button>
       <button data-cat="languages">Languages</button>
@@ -62,12 +68,55 @@
     <div class="skills-category active" id="cat-development">
       <h3>$ skills --category=development</h3>
       <div class="skills-grid">
+        <div class="skill-tag">JavaScript <span class="skill-source">Core</span></div>
+        <div class="skill-tag">TypeScript <span class="skill-source">Core</span></div>
         <div class="skill-tag">Node.js <span class="skill-source">Full-Stack Dev</span></div>
+        <div class="skill-tag">HTML/CSS <span class="skill-source">Core</span></div>
         <div class="skill-tag">API Engineering <span class="skill-source">Top Skill</span></div>
         <div class="skill-tag">Software Development <span class="skill-source">Top Skill</span></div>
         <div class="skill-tag">Web Development <span class="skill-source">Top Skill</span></div>
         <div class="skill-tag">Web Design <span class="skill-source">Frontend</span></div>
-        <div class="skill-tag">IT Strategy <span class="skill-source">Education</span></div>
+      </div>
+    </div>
+
+    <!-- AI & AUTOMATION -->
+    <div class="skills-category" id="cat-ai">
+      <h3>$ skills --category=ai-automation</h3>
+      <div class="skills-grid">
+        <div class="skill-tag">AI Agents <span class="skill-source">Brainsroot</span></div>
+        <div class="skill-tag">n8n Automation <span class="skill-source">Brainsroot</span></div>
+        <div class="skill-tag">OpenAI Tooling <span class="skill-source">Codex · Models</span></div>
+        <div class="skill-tag">AI-Assisted Coding <span class="skill-source">Daily Workflow</span></div>
+        <div class="skill-tag">Workflow Automation <span class="skill-source">Brainsroot</span></div>
+        <div class="skill-tag">Bot Engineering <span class="skill-source">Discord · Telegram</span></div>
+        <div class="skill-tag">Web Scraping <span class="skill-source">Automation</span></div>
+        <div class="skill-tag">AI Search Optimization <span class="skill-source">ChatGPT · Perplexity</span></div>
+      </div>
+    </div>
+
+    <!-- BACKEND & APIs -->
+    <div class="skills-category" id="cat-backend">
+      <h3>$ skills --category=backend-apis</h3>
+      <div class="skills-grid">
+        <div class="skill-tag">REST APIs <span class="skill-source">Core</span></div>
+        <div class="skill-tag">Webhooks <span class="skill-source">Integrations</span></div>
+        <div class="skill-tag">Authentication <span class="skill-source">Auth · Sessions · JWT</span></div>
+        <div class="skill-tag">Databases <span class="skill-source">SQL · NoSQL</span></div>
+        <div class="skill-tag">Payment Integration <span class="skill-source">Gateways</span></div>
+        <div class="skill-tag">Cloud Services <span class="skill-source">Deployment</span></div>
+      </div>
+    </div>
+
+    <!-- FRONTEND -->
+    <div class="skills-category" id="cat-frontend">
+      <h3>$ skills --category=frontend</h3>
+      <div class="skills-grid">
+        <div class="skill-tag">Responsive UI <span class="skill-source">Core</span></div>
+        <div class="skill-tag">Browser APIs <span class="skill-source">Core</span></div>
+        <div class="skill-tag">Live Preview <span class="skill-source">Sugarbill</span></div>
+        <div class="skill-tag">PDF/PNG Generation <span class="skill-source">Sugarbill</span></div>
+        <div class="skill-tag">SEO & Schema Markup <span class="skill-source">Enlight Lawyers</span></div>
+        <div class="skill-tag">Git/GitHub <span class="skill-source">Version Control</span></div>
       </div>
     </div>
 
@@ -75,25 +124,12 @@
     <div class="skills-category" id="cat-design">
       <h3>$ skills --category=design</h3>
       <div class="skills-grid">
+        <div class="skill-tag">Figma <span class="skill-source">UI/UX</span></div>
+        <div class="skill-tag">Brand Identity <span class="skill-source">Brainsroot</span></div>
+        <div class="skill-tag">Logo Design <span class="skill-source">Brainsroot</span></div>
         <div class="skill-tag">Graphic Design <span class="skill-source">Top Skill</span></div>
-        <div class="skill-tag">Branding & Identity <span class="skill-source">Prayas Group</span></div>
         <div class="skill-tag">Product Design <span class="skill-source">Prayas Group</span></div>
-        <div class="skill-tag">Product Branding <span class="skill-source">Prayas Group</span></div>
         <div class="skill-tag">Poster Design <span class="skill-source">Prayas Group</span></div>
-      </div>
-    </div>
-
-    <!-- TRADING & CRYPTO -->
-    <div class="skills-category" id="cat-trading">
-      <h3>$ skills --category=trading</h3>
-      <div class="skills-grid">
-        <div class="skill-tag">Cryptocurrency Trading <span class="skill-source">Binance</span></div>
-        <div class="skill-tag">Risk Management <span class="skill-source">Binance</span></div>
-        <div class="skill-tag">Market Analysis <span class="skill-source">Binance</span></div>
-        <div class="skill-tag">Client Relations <span class="skill-source">Binance</span></div>
-      </div>
-      <div class="skills-note">
-        <strong>516</strong> verified Binance transactions · <strong>277</strong> settled · Largest execution: <strong>¥903,000</strong>
       </div>
     </div>
 
@@ -101,13 +137,13 @@
     <div class="skills-category" id="cat-business">
       <h3>$ skills --category=business</h3>
       <div class="skills-grid">
+        <div class="skill-tag">Project Delivery <span class="skill-source">Brainsroot</span></div>
+        <div class="skill-tag">Client Partnerships <span class="skill-source">Brainsroot</span></div>
+        <div class="skill-tag">Product Strategy <span class="skill-source">Brainsroot</span></div>
         <div class="skill-tag">Project Management <span class="skill-source">ISA</span></div>
         <div class="skill-tag">Leadership <span class="skill-source">ISA</span></div>
-        <div class="skill-tag">Team Leadership <span class="skill-source">ISA</span></div>
-        <div class="skill-tag">Event Organizing <span class="skill-source">ISA</span></div>
         <div class="skill-tag">Sales <span class="skill-source">Teqtive</span></div>
         <div class="skill-tag">Customer Support <span class="skill-source">Teqtive</span></div>
-        <div class="skill-tag">Customer Relationship Management <span class="skill-source">Teqtive</span></div>
         <div class="skill-tag">Lead Generation <span class="skill-source">Teqtive</span></div>
       </div>
     </div>
@@ -116,9 +152,10 @@
     <div class="skills-category" id="cat-it">
       <h3>$ skills --category=it</h3>
       <div class="skills-grid">
-        <div class="skill-tag">Computer Diagnostics <span class="skill-source">Best Tech Center</span></div>
+        <div class="skill-tag">IT Support <span class="skill-source">Service Desk</span></div>
         <div class="skill-tag">Hardware Diagnostics <span class="skill-source">Best Tech Center</span></div>
-        <div class="skill-tag">Career Path Planning <span class="skill-source">LinkedIn Certified</span></div>
+        <div class="skill-tag">Networking <span class="skill-source">Troubleshooting</span></div>
+        <div class="skill-tag">OS Troubleshooting <span class="skill-source">Windows · macOS · Linux</span></div>
       </div>
     </div>
 
@@ -128,15 +165,22 @@
       <div class="skills-grid">
         <div class="skill-tag">Bengali <span class="skill-source">Native</span></div>
         <div class="skill-tag">English <span class="skill-source">Duolingo Certified</span></div>
-        <div class="skill-tag">Japanese <span class="skill-source">Asahi University</span></div>
+        <div class="skill-tag">Japanese <span class="skill-source">JLPT N2</span></div>
       </div>
     </div>
 
   </section>
 
   <footer>
-    <p class="footer-line"><span class="amber">></span> SHEIKH RIDWAN // DESIGN SYSTEM v2026</p>
+    <p class="footer-line"><span class="amber">></span> SHEIKH RIDWAN // FULL-STACK DEVELOPER // BRAINSROOT INC.</p>
     <p class="footer-line">© 2026 Sheikh Ridwan — All Systems Operational</p>
+    <p class="footer-line">
+      <a href="https://brainsroot.com" target="_blank">brainsroot.com</a> ·
+      <a href="https://github.com/ThisIsSheikhRidwan" target="_blank">GitHub</a> ·
+      <a href="https://www.linkedin.com/in/sheikhridwan" target="_blank">LinkedIn</a> ·
+      <a href="https://www.facebook.com/sheikh.ridwan.islam" target="_blank">Facebook</a> ·
+      <a href="https://www.instagram.com/iamsheikhridwan" target="_blank">Instagram</a>
+    </p>
   </footer>
 
   <script src="script.js"></script>
