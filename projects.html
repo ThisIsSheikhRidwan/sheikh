@@ -50,13 +50,13 @@
 
   <section class="page-content">
     <div class="terminal-block" style="margin-bottom:40px;">
-      <span class="comment">// 4 shipped projects. Real clients. Real results. Click a project to read the full brief.</span>
+      <span class="comment">// 4 shipped projects. Real clients. Real results. Open a project to read its full brief.</span>
     </div>
 
     <div class="case-grid">
 
       <!-- Orion AI -->
-      <div class="case-card" data-case="orion">
+      <div class="case-card">
         <div class="case-num">01</div>
         <div class="case-title">> ORION_AI</div>
         <div class="case-client">Internal Product · Brainsroot Inc.</div>
@@ -70,36 +70,13 @@
         <div class="case-stack">
           <span>Node.js</span><span>Discord API</span><span>AI Agents</span><span>Automation</span>
         </div>
-        <div class="case-full" id="full-orion">
-          <div class="case-section">
-            <div class="case-section-title">> The Challenge</div>
-            <p>Running a company means repeating the same operational work every day: standups, reminders, research, drafting, admin. Paid tools like Slack solve pieces of it — but at a recurring cost, and they never actually do the work.</p>
-          </div>
-          <div class="case-section">
-            <div class="case-section-title">> The Solution</div>
-            <p>Built Orion AI — an AI assistant that operates a complete virtual office inside Discord:</p>
-            <ul>
-              <li><strong>Server admin</strong> — manages roles, channels and housekeeping automatically</li>
-              <li><strong>Memory</strong> — persistent context across conversations</li>
-              <li><strong>Web research</strong> — pulls current information on demand</li>
-              <li><strong>Scheduled standups & reminders</strong> — runs on a timer, no one has to prompt it</li>
-              <li><strong>Content drafting</strong> — writes and formats drafts on command</li>
-            </ul>
-          </div>
-          <div class="case-section">
-            <div class="case-section-title">> Results</div>
-            <ul>
-              <li><strong>Replaced paid Slack</strong> — monthly subscription eliminated</li>
-              <li>Standups, reminders and research now run <strong>on schedule, unattended</strong></li>
-              <li>One assistant replaces a stack of disconnected tools</li>
-            </ul>
-          </div>
+        <div class="case-actions">
+          <a href="case-orion-ai.html" class="case-toggle">[ READ_FULL_BRIEF ]</a>
         </div>
-        <button class="case-toggle" data-target="full-orion">[ READ_FULL_BRIEF ]</button>
       </div>
 
       <!-- Enlight Lawyers -->
-      <div class="case-card" data-case="enlight">
+      <div class="case-card">
         <div class="case-num">02</div>
         <div class="case-title">ENLIGHT_LAWYERS</div>
         <div class="case-client">Queensland Law Firm · 2025</div>
@@ -113,37 +90,14 @@
         <div class="case-stack">
           <span>Web Development</span><span>SEO</span><span>Schema Markup</span><span>Brand Identity</span>
         </div>
-        <div class="case-full" id="full-enlight">
-          <div class="case-section">
-            <div class="case-section-title">> The Challenge</div>
-            <p>Enlight Lawyers, a Queensland-based law firm, needed a complete digital transformation: a professional brand identity, a modern website that converts visitors into clients, and a strong SEO foundation to compete in the legal market.</p>
-            <p><strong>Project scope:</strong> brand identity & logo design · custom legal website · SEO &amp; keyword research · AI response optimization · client communication templates</p>
-          </div>
-          <div class="case-section">
-            <div class="case-section-title">> The Approach</div>
-            <ul>
-              <li><strong>01 · Brand Identity</strong> — professional visual identity: logo, color palette, typography and brand guidelines reflecting the firm's values and expertise</li>
-              <li><strong>02 · Website & SEO</strong> — comprehensive legal-industry SEO and keyword research; a website optimized for both Google rankings and AI search visibility</li>
-              <li><strong>03 · AI Optimization</strong> — content structure and schema markup tuned for AI response generation, so the firm appears accurately in ChatGPT, Perplexity and other AI search tools</li>
-            </ul>
-          </div>
-          <div class="case-section">
-            <div class="case-section-title">> Results</div>
-            <ul>
-              <li><strong>Complete</strong> — full brand identity and digital presence</li>
-              <li><strong>SEO</strong> — comprehensive legal keyword research</li>
-              <li><strong>AI-Ready</strong> — verified live in ChatGPT and Perplexity answers</li>
-            </ul>
-          </div>
-        </div>
-        <button class="case-toggle" data-target="full-enlight">[ READ_FULL_BRIEF ]</button>
-        <div class="case-links">
-          <a href="https://brainsroot.com/case-studies/enlight-lawyers/" target="_blank">[ CASE_STUDY ]</a>
+        <div class="case-actions">
+          <a href="case-enlight-lawyers.html" class="btn-toggle">[ READ_FULL_BRIEF ]</a>
+          <a href="https://brainsroot.com/case-studies/enlight-lawyers/" target="_blank" class="btn-toggle btn-toggle-outline">[ CASE_STUDY ]</a>
         </div>
       </div>
 
       <!-- Sugarbill -->
-      <div class="case-card" data-case="sugarbill">
+      <div class="case-card">
         <div class="case-num">03</div>
         <div class="case-title">SUGARBILL</div>
         <div class="case-client">Invoice App · Privacy-First</div>
@@ -157,30 +111,15 @@
         <div class="case-stack">
           <span>JavaScript</span><span>Browser APIs</span><span>PDF/PNG Generation</span><span>Live Preview</span>
         </div>
-        <div class="case-full" id="full-sugarbill">
-          <div class="case-section">
-            <div class="case-section-title">> The Concept</div>
-            <p>Most invoice tools require accounts, subscriptions, and upload your data to servers. SugarBill flips that model completely. Every invoice is created in-browser — your data never touches a server. Share via URL (data encoded in the link itself) or download as PDF/PNG.</p>
-            <p><strong>Key features:</strong> no sign-up or accounts · privacy-first (data stays on your device) · live preview while editing · export as PDF or high-res PNG · shareable links with data in URL · tax, discounts and line items</p>
-          </div>
-          <div class="case-section">
-            <div class="case-section-title">> Technical Highlights</div>
-            <ul>
-              <li><strong>01 · Client-Side Only</strong> — every operation runs in the browser. No backend, no database, no server costs. Pure frontend.</li>
-              <li><strong>02 · URL-Based Sharing</strong> — invoice data is encoded directly in the share URL. No server needed to store or retrieve — just share the link.</li>
-              <li><strong>03 · PDF Generation</strong> — professional PDF and PNG export using browser-native APIs. Print-ready invoices with clean typography.</li>
-            </ul>
-          </div>
-        </div>
-        <button class="case-toggle" data-target="full-sugarbill">[ READ_FULL_BRIEF ]</button>
-        <div class="case-links">
-          <a href="https://sugarbill.vercel.app/" target="_blank">[ LIVE_DEMO ]</a>
-          <a href="https://brainsroot.com/case-studies/sugarbill/" target="_blank">[ Case Study ]</a>
+        <div class="case-actions">
+          <a href="case-sugarbill.html" class="btn-toggle">[ READ_FULL_BRIEF ]</a>
+          <a href="https://sugarbill.vercel.app/" target="_blank" class="btn-toggle btn-link-outline">[ LIVE_DEMO ]</a>
+          <a href="https://brainsroot.com/case-studies/sugarbill/" target="_blank" class="btn-toggle btn-link-outline">[ Case Study ]</a>
         </div>
       </div>
 
       <!-- Brainsroot.com & Personal Portfolio -->
-      <div class="case-card" data-case="brainsroot">
+      <div class="case-card">
         <div class="case-num">04</div>
         <div class="case-title">BRAINSROOT.COM</div>
         <div class="case-client">Company Site + Personal Portfolio</div>
@@ -194,34 +133,11 @@
         <div class="case-stack">
           <span>Astro</span><span>Next.js</span><span>SEO</span><span>Schema Markup</span><span>AI-Assisted Dev</span>
         </div>
-        <div class="case-full" id="full-brainsroot">
-          <div class="case-section">
-            <div class="case-section-title">> The Challenge</div>
-            <p>Brainsroot needed a company site that sells services (websites, web apps, desktop apps, automation) to businesses across the US, Canada, UK and Australia — and a personal portfolio that establishes the founder's credibility as a full-stack developer.</p>
-          </div>
-          <div class="case-section">
-            <div class="case-section-title">> The Solution</div>
-            <ul>
-              <li><strong>Brainsroot.com</strong> — service pages, industry pages, case studies, team pages and a 5-step process, built with Astro for speed</li>
-              <li><strong>Personal portfolio</strong> — terminal-inspired design system with About, Experience, Skills, Projects, Showcase, Education and Contact sections</li>
-              <li><strong>AI-assisted delivery</strong> — both sites designed, developed and shipped end-to-end with AI-assisted workflows</li>
-              <li><strong>SEO & AI search</strong> — rich schema markup (8+ schema types), maintained sitemap, optimized for Google and AI search engines</li>
-            </ul>
-          </div>
-          <div class="case-section">
-            <div class="case-section-title">> Results</div>
-            <ul>
-              <li>Company site with <strong>50+ projects shipped</strong> and <strong>4.9★ client rating</strong> showcased</li>
-              <li>Personal site ranking for full-stack developer keywords</li>
-              <li>Connected brand system across both properties</li>
-            </ul>
-          </div>
-        </div>
-        <button class="case-toggle" data-target="full-brainsroot">[ READ_FULL_BRIEF ]</button>
-        <div class="case-links">
-          <a href="https://brainsroot.com" target="_blank">[ LIVE_SITE ]</a>
-          <a href="https://github.com/ThisIsSheikhRidwan/brainsroot" target="_blank">[ GitHub ]</a>
-          <a href="https://github.com/ThisIsSheikhRidwan/sheikh" target="_blank">[ Portfolio_Repo ]</a>
+        <div class="case-actions">
+          <a href="case-brainsroot.html" class="btn-toggle">[ READ_FULL_BRIEF ]</a>
+          <a href="https://brainsroot.com" target="_blank" class="btn-toggle btn-link-outline">[ LIVE_SITE ]</a>
+          <a href="https://github.com/ThisIsSheikhRidwan/brainsroot" target="_blank" class="btn-toggle btn-link-outline">[ GitHub ]</a>
+          <a href="https://github.com/ThisIsSheikhRidwan/sheikh" target="_blank" class="btn-toggle btn-link-outline">[ Portfolio_Repo ]</a>
         </div>
       </div>
 
@@ -251,14 +167,6 @@
     function hideMenu() { navLinks.classList.remove('open'); }
     window.addEventListener('resize', () => {
       if (window.innerWidth > 768) navLinks.classList.remove('open');
-    });
-
-    document.querySelectorAll('.case-toggle').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const target = document.getElementById(btn.dataset.target);
-        const isOpen = target.classList.toggle('open');
-        btn.textContent = isOpen ? '[ COLLAPSE_BRIEF ]' : '[ READ_FULL_BRIEF ]';
-      });
     });
   </script>
 </body>

@@ -26,6 +26,26 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://sheikhridwan.netlify.app/case-orion-ai.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sheikhridwan.netlify.app/case-enlight-lawyers.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sheikhridwan.netlify.app/case-sugarbill.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sheikhridwan.netlify.app/case-brainsroot.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://sheikhridwan.netlify.app/showcase.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

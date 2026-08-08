@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sugarbill — Case Study | Sheikh Ridwan</title>
+  <meta name="description" content="Sugarbill case study: a privacy-first invoice app, 100% client-side. No backend, no database, no accounts. URL-based sharing, PDF and PNG export, live preview.">
+  <meta property="og:title" content="Sugarbill — Case Study | Sheikh Ridwan">
+  <meta property="og:description" content="Privacy-first invoice app. 100% client-side. URL-based sharing, PDF/PNG export.">
+  <meta property="og:image" content="https://sheikhridwan.netlify.app/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sugarbill — Case Study | Sheikh Ridwan">
+  <meta name="twitter:description" content="Privacy-first invoice app. 100% client-side. URL-based sharing, PDF/PNG export.">
+  <meta name="twitter:image" content="https://sheikhridwan.netlify.app/og-image.png">
+  <link rel="canonical" href="https://sheikhridwan.netlify.app/case-sugarbill.html">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@300;400;600&family=Material+Symbols+Outlined&display=swap" rel="stylesheet">
+</head>
+<body>
+  <canvas id="matrix-canvas"></canvas>
+
+  <nav>
+    <a href="index.html" class="logo"><img src="whiteridwan.svg" alt="Sheikh Ridwan"></a>
+    <div class="nav-links" id="navLinks">
+      <span class="material-symbols-outlined close-btn" onclick="hideMenu()">close</span>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="showcase.html">Showcase</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="reflection.html">System Log</a></li>
+      </ul>
+    </div>
+    <span class="material-symbols-outlined" onclick="showMenu()">menu</span>
+  </nav>
+
+  <section class="sub-header">
+    <div class="terminal-line"><span class="prompt">></span> cat /projects/sugarbill/brief.md</div>
+    <h1>> SUGARBILL</h1>
+    <div class="breadcrumb">~ /projects/sugarbill <span>|</span> <a href="projects.html">[ BACK_TO_PROJECTS ]</a></div>
+  </section>
+
+  <section class="page-content">
+    <div class="case-page">
+      <div class="case-page-meta">
+        <span>Invoice App · Privacy-First</span>
+        <span>Web App · 100% Client-Side</span>
+      </div>
+      <div class="case-stack">
+        <span>JavaScript</span><span>Browser APIs</span><span>PDF/PNG Generation</span><span>Live Preview</span>
+      </div>
+
+      <div class="case-section">
+        <div class="case-section-title">> The Concept</div>
+        <p>Most invoice tools require accounts, subscriptions, and upload your data to servers. SugarBill flips that model completely. Every invoice is created in-browser — your data never touches a server. Share via URL (data encoded in the link itself) or download as PDF/PNG.</p>
+        <p><strong>Key features:</strong> no sign-up or accounts · privacy-first (data stays on your device) · live preview while editing · export as PDF or high-res PNG · shareable links with data in URL · tax, discounts and line items</p>
+      </div>
+
+      <div class="case-section">
+        <div class="case-section-title">> Technical Highlights</div>
+        <ul>
+          <li><strong>01 · Client-Side Only</strong> — every operation runs in the browser. No backend, no database, no server costs. Pure frontend.</li>
+          <li><strong>02 · URL-Based Sharing</strong> — invoice data is encoded directly in the share URL. No server needed to store or retrieve — just share the link.</li>
+          <li><strong>03 · PDF Generation</strong> — professional PDF and PNG export using browser-native APIs. Print-ready invoices with clean typography.</li>
+        </ul>
+      </div>
+
+      <div class="case-page-nav">
+        <a href="https://sugarbill.vercel.app/" target="_blank" class="btn">[ LIVE_DEMO ]</a>
+        <a href="https://brainsroot.com/case-studies/sugarbill/" target="_blank" class="btn">[ FULL_CASE_STUDY ]</a>
+        <a href="projects.html" class="btn">[ BACK_TO_PROJECTS ]</a>
+        <a href="contact.html" class="btn btn-primary">[ START_A_PROJECT ]</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p class="footer-line"><span class="amber">></span> SHEIKH RIDWAN // FULL-STACK DEVELOPER // BRAINSROOT INC.</p>
+    <p class="footer-line">© 2026 Sheikh Ridwan — All Systems Operational</p>
+    <p class="footer-line">
+      <a href="https://brainsroot.com" target="_blank">brainsroot.com</a> ·
+      <a href="https://github.com/ThisIsSheikhRidwan" target="_blank">GitHub</a> ·
+      <a href="https://www.linkedin.com/in/sheikhridwan" target="_blank">LinkedIn</a> ·
+      <a href="https://www.facebook.com/sheikh.ridwan.islam" target="_blank">Facebook</a> ·
+      <a href="https://www.instagram.com/iamsheikhridwan" target="_blank">Instagram</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    const navLinks = document.getElementById("navLinks");
+    function showMenu() { navLinks.classList.add('open'); }
+    function hideMenu() { navLinks.classList.remove('open'); }
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768) navLinks.classList.remove('open');
+    });
+  </script>
+</body>
+</html>

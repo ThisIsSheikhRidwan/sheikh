@@ -1380,9 +1380,15 @@ nav .material-symbols-outlined {
   font-family: var(--font-mono);
 }
 
-.case-toggle {
-  display: inline-block;
+.case-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
   margin-top: 16px;
+}
+
+.btn-toggle {
+  display: inline-block;
   font-family: var(--font-mono);
   font-size: 11px;
   padding: 8px 16px;
@@ -1394,10 +1400,66 @@ nav .material-symbols-outlined {
   letter-spacing: 1px;
 }
 
-.case-toggle:hover {
+.btn-toggle:hover {
   background: var(--amber);
   color: var(--bg);
   box-shadow: 0 0 15px rgba(255, 184, 0, 0.3);
+}
+
+.btn-link-outline {
+  border-color: var(--border);
+  color: var(--text-muted);
+}
+
+.btn-link-outline:hover {
+  border-color: var(--amber);
+  color: var(--amber);
+  background: transparent;
+  box-shadow: 0 0 12px rgba(255, 184, 0, 0.15);
+}
+
+/* === CASE STUDY PAGES === */
+.case-page {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.case-page-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--gold);
+  margin-bottom: 16px;
+}
+
+.case-page .case-section {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 24px;
+  margin-bottom: 20px;
+}
+
+.case-page .case-section-title {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.case-page .case-section p {
+  font-size: 14px;
+}
+
+.case-page .case-section ul li {
+  font-size: 14px;
+  padding: 4px 0 4px 18px;
+}
+
+.case-page-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 30px;
 }
 
 .case-links {
@@ -1426,6 +1488,11 @@ nav .material-symbols-outlined {
 .badge-base.LI-profile-badge {
   display: inline-block;
   max-width: 100%;
+  margin-bottom: 30px;
+}
+
+.badge-base .LI-simple-link {
+  display: none;
 }
 
 @media(max-width: 768px) {
