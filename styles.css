@@ -1458,25 +1458,31 @@ nav .material-symbols-outlined {
   font-family: var(--font-mono);
 }
 
-.case-card .case-stack {
+.case-stack {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
+  gap: 8px;
   border-top: 1px solid var(--border);
   padding-top: 14px;
+  margin-top: 12px;
+  margin-bottom: 16px;
 }
 
-.case-card .case-stack span {
+.case-stack span {
   font-family: var(--font-mono);
-  font-size: 10px;
+  font-size: 11px;
   color: var(--text-muted);
+  background: var(--surface);
   border: 1px solid var(--border);
-  padding: 3px 10px;
+  padding: 4px 12px;
+  border-radius: 3px;
+  transition: 0.3s;
 }
 
-.case-card .case-stack span:hover {
+.case-stack span:hover {
   border-color: var(--amber);
   color: var(--amber);
+  box-shadow: 0 0 10px rgba(255, 184, 0, 0.1);
 }
 
 .case-full {
